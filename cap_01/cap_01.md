@@ -4,6 +4,10 @@
 
 ### 1.1.1. Descripción de la Startup
 
+<div align="center" style="width: 250px;">
+<img alt="Image" src="https://github.com/user-attachments/assets/935e21c5-e038-4c65-bb01-0f3a79ac3495" />
+</div>
+
 **LaRana** es una startup tecnológica creada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas, orientada al desarrollo de soluciones digitales con impacto social. Nuestro producto principal, **Alimenta**, es una plataforma que conecta restaurantes con excedentes de alimentos en buen estado y albergues u organizaciones sociales que necesitan abastecimiento oportuno para atender a sus beneficiarios. A través de una experiencia ágil, empática y transparente, Alimenta facilita la publicación, reserva y coordinación de recojo de paquetes alimentarios, reduciendo el desperdicio de comida y contribuyendo a mitigar la inseguridad alimentaria.
 
 **Misión:** Desarrollar una plataforma digital eficiente y accesible que permita rescatar alimentos aptos para el consumo humano, conectando de forma inmediata a restaurantes donantes con albergues y ONGs, para generar impacto social y reducir el desperdicio alimentario.
@@ -215,9 +219,9 @@ Aquí se presenta el Lean UX Canvas desarrollado para **Alimenta**:
 
 **Figura 1. Lean UX Canvas de Alimenta**
 
-![Lean UX Canvas](assets/images/screenshots/lean-ux-canvas.png)
+![Image](https://github.com/user-attachments/assets/84e19ccb-9172-4ab3-bbdb-e83b49a80d87)
 
-**Enlace al Lean UX Canvas:** [_Ver en Miro_](https://miro.com/welcomeonboard/cFdpMVVSM1czSlJINm93ZFcyN3R0VWNrKyt1ZVA3K3NNa1BBNHhRdDJsQzFTcjRQbTVSRm1YMzBqaUswUnFieHQ3dHJsbk93eWVVVkovak9aeStNY2EvcDg3VGJkSDlsU1BUbVpLT3U1N3AxekZweHhDb1E0c1h6VjQxa0FxN3h3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=945675870248)
+**Enlace al Lean UX Canvas:** [_Ver en Miro_](https://miro.com/app/board/uXjVGjMX-pI=/?share_link_id=473171606548)
 
 ## 1.3. Segmentos objetivo
 

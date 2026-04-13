@@ -25,10 +25,10 @@ En esta sección evaluamos el panorama de rescate de alimentos y gestión de exc
         <td valign="top" align="center">Olio</td>
   </tr>
   <tr>
-    <td valign="top" align="center"><img src="assets/images/Alimenta_Logo.png" alt="Alimenta Logo" height="150" /></td>
-    <td valign="top" align="center"><img src="assets/images/BAP_Logo.png" alt="BAP Logo" height="80" /></td>
-    <td valign="top" align="center"><img src="assets/images/Cirkula_Logo.png" alt="Cirkula Logo" height="150" /></td>
-    <td valign="top" align="center"><img src="assets/images/Olio_Logo.png" alt="Olio Logo" height="130" /></td>
+    <td valign="top" align="center"><img src="https://github.com/user-attachments/assets/20f05f60-f98d-4153-86e3-41f3d2f576b9" alt="Alimenta Logo" /></td>
+    <td valign="top" align="center"><img src="https://github.com/user-attachments/assets/3fe33af2-87ee-4b3a-b41f-805c8e91a1d5" alt="BAP Logo" /></td>
+    <td valign="top" align="center"><img src="https://github.com/user-attachments/assets/aad5e6d0-930c-43fb-b12c-5dd6294af3c0" alt="Cirkula Logo" /></td>
+    <td valign="top" align="center"><img src="https://github.com/user-attachments/assets/8e6b68d6-8b4f-4251-9797-405fd8e7c83a" alt="Olio Logo" /></td>
    </tr>
   <tr>
     <td rowspan="2" valign="top">Perfil</td>
@@ -245,21 +245,21 @@ A continuación se detallan las tareas críticas identificadas para cada segment
 
 ##### User Task Matrix - Restaurantes (Donantes)
 
-| **Tareas / Tasks** | **Frecuencia** | **Importancia** |
-| :--- | :--- | :--- |
-| Publicación de paquete de comida excedente | Alta | Crítica |
-| Monitoreo de estado de recojo (Asignado/En camino) | Alta | Alta |
-| Validación de entrega mediante código QR | Media | Alta |
-| Revisión de historial e impacto social generado | Mensual | Media |
+| **Tareas / Tasks**                                 | **Frecuencia** | **Importancia** |
+| :------------------------------------------------- | :------------- | :-------------- |
+| Publicación de paquete de comida excedente         | Alta           | Crítica         |
+| Monitoreo de estado de recojo (Asignado/En camino) | Alta           | Alta            |
+| Validación de entrega mediante código QR           | Media          | Alta            |
+| Revisión de historial e impacto social generado    | Mensual        | Media           |
 
 ##### User Task Matrix - Albergues (Receptores)
 
-| **Tareas / Tasks** | **Frecuencia** | **Importancia** |
-| :--- | :--- | :--- |
-| Visualización de mapa con donaciones cercanas | Alta | Crítica |
-| Reserva de raciones disponibles | Media | Crítica |
-| Coordinación logística de recojo | Media | Alta |
-| Confirmación de recepción de alimentos | Media | Crítica |
+| **Tareas / Tasks**                            | **Frecuencia** | **Importancia** |
+| :-------------------------------------------- | :------------- | :-------------- |
+| Visualización de mapa con donaciones cercanas | Alta           | Crítica         |
+| Reserva de raciones disponibles               | Media          | Crítica         |
+| Coordinación logística de recojo              | Media          | Alta            |
+| Confirmación de recepción de alimentos        | Media          | Crítica         |
 
 #### 2.3.3. Empathy Maps
 
