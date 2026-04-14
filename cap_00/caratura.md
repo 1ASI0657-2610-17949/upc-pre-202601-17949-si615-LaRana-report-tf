@@ -36,13 +36,13 @@
 
 ## Team members:
 
-| Alumnos                      |     Codigo     |
-| :--------------------------- | :------------: |
-| Anderson Gonza Morales      |   U202120836   |
-| Quique Vladimir Jara Benites |   U202022365   |
-| Cesar Augusto Navarro Correa |   U202310129   |
+| Alumnos                          |   Codigo   |
+| :------------------------------- | :--------: |
+| Anderson Gonza Morales           | U202120836 |
+| Quique Vladimir Jara Benites     | U202022365 |
+| Cesar Augusto Navarro Correa     | U202310129 |
 | Rafael Augusto Tasayco Almonacid | U20231F226 |
-| Guerrero Tomas Nelson Fabrizio |   U202222745   |
+| Guerrero Tomas Nelson Fabrizio   | U202222745 |
 
 Link del repositorio: [Enlace](https://github.com/1ASI0657-2610-17949/Documentation-Report)
 
@@ -112,6 +112,7 @@ Link del repositorio: [Enlace](https://github.com/1ASI0657-2610-17949/Documentat
   <p><a href="./content/chapter-3/chapter-3.md">3.2. User Stories</a></p>
   <p><a href="./content/chapter-3/chapter-3.md">3.3. Impact Mapping</a></p>
   <p><a href="./content/chapter-3/chapter-3.md">3.4. Product Backlog</a></p>
+  
   <h1><a href="./content/chapter-4/chapter-4.md">Capitulo IV: Product Architecture Design</a></h1>
   <p><a href="./content/chapter-4/chapter-4.md">4.1 Desing Concepts, ViewPoints & ER Diagrams</a></p>
   4.1.1 Principles Statements

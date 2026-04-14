@@ -141,6 +141,9 @@ Para el proyecto **Alimenta**, se han diseñado guías de entrevista enfocadas e
 **Objetivo:** Entender la gestión de excedentes, la disposición a donar bajo modelos de inmediatez y el perfil tecnológico del personal encargado.
 
 - **Introducción y Perfil (Antecedentes):**
+  - ¿Cuál es su nombre completo?
+  - ¿Qué edad tiene?
+  - ¿En qué distrito vive actualmente?
   - ¿Cuál es su cargo en el restaurante y cuántos años de experiencia tiene en el rubro?
   - Cuénteme un poco sobre el restaurante: ¿Qué tipo de comida sirven y en qué distrito operan principalmente?
 - **Gestión de Excedentes (El Caso):**
@@ -161,11 +164,15 @@ Para el proyecto **Alimenta**, se han diseñado guías de entrevista enfocadas e
 **Objetivo:** Identificar las necesidades críticas de alimentación, la capacidad logística para recolectar donaciones y el nivel de digitalización.
 
 - **Introducción y Perfil (Antecedentes):**
+  - ¿Cuál es su nombre completo?
+  - ¿Qué edad tiene?
+  - ¿En qué distrito vive actualmente?
   - ¿Cuál es su cargo en la organización y a cuántas personas benefician diariamente?
   - ¿Dónde están ubicados y con qué recursos cuentan para el traslado de bienes?
 - **Abastecimiento de Alimentos (El Caso):**
   - ¿Cómo consiguen los alimentos que preparan actualmente? ¿Es un método constante o incierto?
   - ¿En qué momentos del día suelen tener mayor necesidad de alimentos preparados?
+  - ¿Qué medios pueden usar para transportar los alimentos desde restaurantes o negocios hasta su sede?
 - **Tecnología y Conectividad:**
   - ¿Qué tan familiarizado está el equipo del albergue con el uso de aplicaciones móviles para coordinaciones?
   - ¿Qué dispositivo suelen tener a la mano durante el día: un smartphone personal o una computadora compartida?
@@ -185,35 +192,205 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
 
 **Entrevista 1:**
 
-| Atributo                  | Detalle |
-| :------------------------ | :------ |
-| **Nombre**                |         |
-| **Edad / Género**         |         |
-| **Distrito / residencia** |         |
-| **Ocupación / Cargo**     |         |
-| **Marcas e Influencias**  |         |
-| **Fecha de entrevista**   |         |
-| **Timing**                |         |
-| **Enlace a la grabación** |         |
-| **Captura de pantalla**   |         |
-| **Resumen del Caso**      |         |
+**Entrevistador:** Vladimir Jara
+
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td>Luis Fernando Ramirez Soto</td>
+  </tr>
+  <tr>
+    <td><strong>Edad / Genero</strong></td>
+    <td>34 anos / Masculino</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito / residencia</strong></td>
+    <td>Chorrillos, Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Ocupacion / Cargo</strong></td>
+    <td>Administrador de restaurante</td>
+  </tr>
+  <tr>
+    <td><strong>Marcas e Influencias</strong></td>
+    <td>Restaurantes con enfoque de desperdicio cero y compromiso social visible.</td>
+  </tr>
+  <tr>
+    <td><strong>Fecha de entrevista</strong></td>
+    <td>13/04/2026</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>15 minutos</td>
+  </tr>
+  <tr>
+    <td><strong>Enlace a la grabacion</strong></td>
+    <td>Pendiente</td>
+  </tr>
+  <tr>
+    <td><strong>Captura de pantalla</strong></td>
+    <td>Pendiente</td>
+  </tr>
+  <tr>
+    <td><strong>Resumen del Caso</strong></td>
+    <td>El entrevistado señala que en su restaurante si existen excedentes de comida en buen estado al cierre del turno, pero suelen descartarse por falta de tiempo, coordinación inmediata y un proceso simple de donación, por lo que valora una solución digital que permita publicar rápidamente, confirmar el recojo y dar trazabilidad al impacto generado.</td>
+  </tr>
+</table>
+
+**Plantilla para siguientes entrevistas:**
+
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad / Genero</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Distrito / residencia</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Ocupacion / Cargo</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Marcas e Influencias</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Fecha de entrevista</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Enlace a la grabacion</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Captura de pantalla</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Resumen del Caso</strong></td>
+    <td></td>
+  </tr>
+</table>
 
 #### Segmento 2: Albergues y Organizaciones Sociales (Receptores)
 
 **Entrevista 1:**
 
-| Atributo                  | Detalle |
-| :------------------------ | :------ |
-| **Nombre**                |         |
-| **Edad / Género**         |         |
-| **Distrito / residencia** |         |
-| **Ocupación / Cargo**     |         |
-| **Marcas e Influencias**  |         |
-| **Fecha de entrevista**   |         |
-| **Timing**                |         |
-| **Enlace a la grabación** |         |
-| **Captura de pantalla**   |         |
-| **Resumen del Caso**      |         |
+**Entrevistador:** Vladimir Jara
+
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td>Maria Elena Torres Salazar</td>
+  </tr>
+  <tr>
+    <td><strong>Edad / Genero</strong></td>
+    <td>41 anos / Femenino</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito / residencia</strong></td>
+    <td>San Juan de Lurigancho, Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Ocupacion / Cargo</strong></td>
+    <td>Coordinadora de albergue</td>
+  </tr>
+  <tr>
+    <td><strong>Marcas e Influencias</strong></td>
+    <td>Organizaciones y proyectos sociales enfocados en ayuda comunitaria y asistencia alimentaria.</td>
+  </tr>
+  <tr>
+    <td><strong>Fecha de entrevista</strong></td>
+    <td>13/04/2026</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>15 minutos</td>
+  </tr>
+  <tr>
+    <td><strong>Enlace a la grabacion</strong></td>
+    <td>Pendiente</td>
+  </tr>
+  <tr>
+    <td><strong>Captura de pantalla</strong></td>
+    <td>Pendiente</td>
+  </tr>
+  <tr>
+    <td><strong>Resumen del Caso</strong></td>
+    <td>La entrevistada indica que su organizacion tiene necesidad constante de alimentos y que, aunque dependen de donaciones variables, cuentan con transporte propio y capacidad de reaccion rapida, por lo que una plataforma como Alimenta seria util si permite ubicar donaciones cercanas, conocer su disponibilidad y coordinar el recojo con informacion clara y oportuna.</td>
+  </tr>
+</table>
+
+**Plantilla para siguientes entrevistas:**
+
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad / Genero</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Distrito / residencia</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Ocupacion / Cargo</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Marcas e Influencias</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Fecha de entrevista</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Enlace a la grabacion</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Captura de pantalla</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Resumen del Caso</strong></td>
+    <td></td>
+  </tr>
+</table>
 
 ---
 
@@ -231,13 +408,13 @@ Los User Personas se construyeron con base en los perfiles identificados para el
 
 Representa al personal operativo (Chef, Gerente de local) que lidia diariamente con mermas y excedentes. Su principal motivación es la agilidad y la responsabilidad social, pero su mayor obstáculo es la falta de tiempo durante el cierre del turno.
 
-![User Persona 1](assets/images/user-personas/user-persona-restaurante.png)
+<img alt="Image" src="https://github.com/user-attachments/assets/c28b8950-1a58-4925-ab64-c54ab4d05220" />
 
 **User Persona 2: Coordinador de Albergue (Receptor)**
 
 Representa a los gestores de organizaciones sociales que buscan donaciones constantes para alimentar a sus beneficiarios. Su reto es la logística de transporte y la comunicación en tiempo real para aprovechar donaciones de comida preparada.
 
-![User Persona 2](assets/images/user-personas/user-persona-albergue.png)
+<img alt="Image" src="https://github.com/user-attachments/assets/2de08cff-f3de-47b2-a607-83138ad4cfce" />
 
 #### 2.3.2. User Task Matrix
 
@@ -267,11 +444,11 @@ Se utilizarán mapas de empatía para profundizar en lo que nuestros usuarios di
 
 ##### Empathy Map - Responsable de Restaurante (Donante)
 
-![Empathy Map Restaurante](assets/images/maps/empathy-map-restaurante.png)
+<img alt="Image" src="https://github.com/user-attachments/assets/ccf6b2d6-15df-4d7e-ae6d-0d8c72699c33" />
 
 ##### Empathy Map - Coordinador de Albergue (Receptor)
 
-![Empathy Map Albergue](assets/images/maps/empathy-map-albergue.png)
+<img alt="Image" src="https://github.com/user-attachments/assets/e62ef46d-96d8-4308-88e3-cc64476fd33f" />
 
 #### 2.3.4. As-is Scenario Mapping
 
@@ -279,8 +456,8 @@ Describe el proceso actual (sin la aplicación) para gestionar excedentes o busc
 
 ##### As-is Scenario Mapping - Gestión de Excedentes en Restaurante
 
-![As-is Scenario Mapping Restaurante](assets/images/maps/as-is-scenario-restaurante.png)
+![Image](https://github.com/user-attachments/assets/af68c83c-b745-4983-a098-3c3542f7349d)
 
 ##### As-is Scenario Mapping - Búsqueda de Donaciones en Albergue
 
-![As-is Scenario Mapping Albergue](assets/images/maps/as-is-scenario-albergue.png)
+![Image](https://github.com/user-attachments/assets/f17ecb5f-1551-4634-b82e-d74ceedf1d8d)
