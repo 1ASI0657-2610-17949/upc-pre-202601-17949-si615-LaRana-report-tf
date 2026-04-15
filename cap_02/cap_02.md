@@ -192,7 +192,7 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
 
 **Entrevista 1:**
 
-**Entrevistador:** Vladimir Jara
+**Entrevistador:** Anderson Gonza Morales
 
 <table>
   <tr>
@@ -201,43 +201,44 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
   <tr>
     <td><strong>Nombre</strong></td>
-    <td>Luis Fernando Ramirez Soto</td>
+    <td>Marleny Montalvan</td>
   </tr>
   <tr>
     <td><strong>Edad / Genero</strong></td>
-    <td>34 anos / Masculino</td>
+    <td>50 anos / Femenino</td>
   </tr>
   <tr>
     <td><strong>Distrito / residencia</strong></td>
-    <td>Chorrillos, Lima</td>
+    <td>Villa el Salvador, Lima</td>
   </tr>
   <tr>
     <td><strong>Ocupacion / Cargo</strong></td>
-    <td>Administrador de restaurante</td>
+    <td>Dueño de restaurante</td>
   </tr>
   <tr>
     <td><strong>Marcas e Influencias</strong></td>
-    <td>Restaurantes con enfoque de desperdicio cero y compromiso social visible.</td>
+    <td>Restaurante criollo.</td>
   </tr>
   <tr>
     <td><strong>Fecha de entrevista</strong></td>
-    <td>13/04/2026</td>
+    <td>14/04/2026</td>
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>15 minutos</td>
+    <td>4:42 minutos</td>
   </tr>
   <tr>
     <td><strong>Enlace a la grabacion</strong></td>
-    <td>Pendiente</td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120836_upc_edu_pe/IQCTVkhKNkBJSKox4i1DN82aAWgmQKDsKEKcSsCSWFbkE-A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dhrRPd">--Video de entrevista a restaurante 1--</a></td>
+
   </tr>
   <tr>
     <td><strong>Captura de pantalla</strong></td>
-    <td>Pendiente</td>
+    <td><img width="1917" " alt="Entre_Rest1" src="https://github.com/user-attachments/assets/bc78321f-8ccd-4f7b-9f99-8bf805be7250" /></td>
   </tr>
   <tr>
     <td><strong>Resumen del Caso</strong></td>
-    <td>El entrevistado señala que en su restaurante si existen excedentes de comida en buen estado al cierre del turno, pero suelen descartarse por falta de tiempo, coordinación inmediata y un proceso simple de donación, por lo que valora una solución digital que permita publicar rápidamente, confirmar el recojo y dar trazabilidad al impacto generado.</td>
+    <td>La entrevistada señala que en su restaurante si hay dias con excedentes de comida en buen estado al termino del dia, indica que aveces se lo dan a los empleados y si sobra mas lo botan, menciona que los dias con menos afluencia de clientes cocinan poco o venden platos a la carta(preparacion en el momento).Como no usan app o algun software de gestion para su restaurante, valoran mucho la facilidad de uso en una solución digital.Por ultimo menciona el transporte y la comunicacion serian los 2 puntos mas importantes para poder hacer la donacion.</td>
   </tr>
 </table>
 

@@ -32,6 +32,7 @@
   </tr>
   <tr>
     <td>
+    <img width="320" alt="Integrante 1" src="https://github.com/user-attachments/assets/7037f447-7de6-4a29-b2f2-bfdb1cf0dc47" />
     </td>
     <td>
       <strong>Anderson Gonza Morales - U202120836</strong><br>
