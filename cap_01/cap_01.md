@@ -49,10 +49,11 @@
   </tr>
   <tr>
     <td>
+      <p align="center"> <img width="320" alt="Image" src="https://github.com/user-attachments/assets/7e445bab-1aff-40f3-8064-559af7db3432" /> </p>
     </td>
     <td>
       <strong>Rafael Augusto Tasayco Almonacid - U20231F226</strong><br>
-      Estudiante de sexto ciclo de la carrera de Ingenieria de Software. Tiene conocimientos en programacion con Python y desarrollo de soluciones orientadas a resolver problemas de manera practica. Ademas, resalta por su pensamiento analitico, capacidad de aprendizaje rapido y disposicion para apoyar en actividades tecnicas del equipo.
+      Mi nombre es Rafael Tasayco, tengo 20 años y actualmente estoy cursando el sexto ciclo de mi carrera universitaria. Entre mis hobbies se encuentran jugar básquet, disfrutar de los videojuegos y escuchar música en mis momentos libres. Cuando culmine mis estudios, me encantaría especializarme y concentrarme en el campo de la ciberseguridad, un área que me apasiona y en la que deseo desarrollarme profesionalmente.
     </td>
   </tr>
   <tr>
