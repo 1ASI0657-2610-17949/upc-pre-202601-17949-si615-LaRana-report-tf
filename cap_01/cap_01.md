@@ -57,6 +57,7 @@
   </tr>
   <tr>
     <td>
+      <img alt="Image" src="https://github.com/user-attachments/assets/fd7b1c91-0be0-4b78-8a35-ffe1109c0319" />
     </td>
     <td>
       <strong>Guerrero Tomas Nelson Fabrizio - U202222745</strong><br>
