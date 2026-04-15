@@ -318,6 +318,7 @@ _(Esta seccion se completara a partir del desglose de las epicas definidas.)_
 ## 3.4. Impact Mapping
 
 ##### Impact Mapping - Gestión de Excedentes en Restaurante
+<img width="1240" height="1962" alt="Image" src="https://github.com/user-attachments/assets/ab4709c6-3287-4274-9be9-06f1df8d1df3" />
 
 ##### Impact Mapping - Búsqueda de Donaciones en Albergue
 
