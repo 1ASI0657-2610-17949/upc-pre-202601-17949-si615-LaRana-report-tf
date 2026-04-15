@@ -321,6 +321,8 @@ _(Esta seccion se completara a partir del desglose de las epicas definidas.)_
 
 ##### Impact Mapping - Búsqueda de Donaciones en Albergue
 
+<img alt="Image" src="https://github.com/user-attachments/assets/88e5e207-45db-4780-a043-7535bada593a" /> 
+
 ## 3.5. Technical Stories
 
 Las siguientes technical stories complementan las historias funcionales del producto y describen capacidades tecnicas necesarias para soportar la arquitectura propuesta de **Alimenta**, especialmente en mensajeria asincrona, geolocalizacion y trazabilidad de evidencias.
