@@ -344,6 +344,57 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
 </table>
 
+**Entrevista 2:**
+
+**Entrevistador:** Rafael Tasayco
+
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td>Alvaro Morante</td>
+  </tr>
+  <tr>
+    <td><strong>Edad / Genero</strong></td>
+    <td>25 anos / Masculino</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito / residencia</strong></td>
+    <td>San Juan de Lurigancho, Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Ocupacion / Cargo</strong></td>
+    <td>Coordinador Logistico</td>
+  </tr>
+  <tr>
+    <td><strong>Marcas e Influencias</strong></td>
+    <td>Iniciativas nacionales de rescate de alimentos, bancos de comida y herramientas digitales de geolocalización para optimización de recojos.</td>
+  </tr>
+  <tr>
+    <td><strong>Fecha de entrevista</strong></td>
+    <td>15/04/2026</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>3:28 minutos</td>
+  </tr>
+  <tr>
+    <td><strong>Enlace a la grabacion</strong></td>
+    <td>https://youtu.be/d--f2F0-H1s</td>
+  </tr>
+  <tr>
+    <td><strong>Captura de pantalla</strong></td>
+    <td><img width="1917" alt="Image" src="https://github.com/user-attachments/assets/7321e26b-2c1f-4913-96d2-423401ec7772" /></td>
+  </tr>
+  <tr>
+    <td><strong>Resumen del Caso</strong></td>
+    <td>La organización social sufre de incertidumbre diaria en su abastecimiento de alimentos. El caso evidencia la necesidad de un canal de comunicación rápido y geolocalizado que les permita aprovechar excedentes de comida cercanos, optimizando sus limitados recursos de transporte y evitando la pérdida de donaciones por falta de coordinación.</td>
+  </tr>
+</table>
+
 **Plantilla para siguientes entrevistas:**
 
 <table>
