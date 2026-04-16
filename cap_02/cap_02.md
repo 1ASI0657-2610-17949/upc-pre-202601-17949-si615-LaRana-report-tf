@@ -281,7 +281,7 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
   <tr>
     <td><strong>Enlace a la grabacion</strong></td>
-    <td>Pendiente</td>
+    <td>https://drive.google.com/file/d/1eAobvQpYO1QpP5D_Om2QaFi5lYFg1PVZ/view?usp=sharing</td>
   </tr>
   <tr>
     <td><strong>Captura de pantalla</strong></td>
@@ -383,7 +383,7 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
   <tr>
     <td><strong>Enlace a la grabacion</strong></td>
-    <td>Pendiente</td>
+    <td>https://drive.google.com/file/d/17tEXNPiwdBb91xEPBzIo8TeA58SqlwO2/view?usp=sharing</td>
   </tr>
   <tr>
     <td><strong>Captura de pantalla</strong></td>
@@ -489,15 +489,13 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
   <tr>
     <td><strong>Captura de pantalla</strong></td>
-    <td><img width="1917" alt="Image" src=" PENDIENTE " /></td>
+    <td><img alt="Image" src="https://github.com/user-attachments/assets/4863ea79-9476-4bcf-bb29-68f84f9faa32" /></td>
   </tr>
   <tr>
     <td><strong>Resumen del Caso</strong></td>
     <td>La organización enfrenta una constante inestabilidad en su suministro alimentario. Resulta imperativo implementar una herramienta de comunicación ágil y con geolocalización que vincule los excedentes disponibles con su ubicación, permitiendo una logística eficiente que maximice el uso del transporte y reduzca el desperdicio por falta de gestión.</td>
   </tr>
 </table>
-
-
 
 **Plantilla para siguientes entrevistas:**
 
@@ -552,7 +550,25 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
 
 ### 2.2.3. Análisis de entrevistas
 
-_(Se completará una vez recolectada la data en las tablas superiores)_
+El análisis de las entrevistas realizadas a restaurantes y organizaciones sociales permitió validar que el problema identificado para **Alimenta** es real, recurrente y operativo. En ambos segmentos aparece una misma brecha: existen alimentos disponibles y existe necesidad inmediata, pero no hay un canal ágil, confiable y visible que conecte a las partes dentro de la ventana de tiempo útil.
+
+En el segmento de **restaurantes**, los entrevistados coincidieron en que sí se generan excedentes en buen estado al cierre del turno, especialmente en días de menor demanda o cuando el flujo de clientes cambia respecto a lo esperado. Sin embargo, esos excedentes suelen terminar repartidos entre el personal o descartados, no por falta de voluntad de donar, sino por la ausencia de un proceso simple y rápido. A partir de los resúmenes y del perfil del persona donante, se observa que el responsable del restaurante trabaja bajo presión, dispone de pocos minutos para decidir y rechaza cualquier solución que implique llamadas, papeleo o coordinación prolongada. Por ello, la propuesta debe priorizar una publicación casi inmediata, con pocos campos y confirmación rápida.
+
+También se identificó que los restaurantes valoran especialmente tres factores: facilidad de uso, seguridad en la entrega y evidencia del impacto generado. La facilidad de uso responde a su contexto operativo; la seguridad reduce el temor a coordinaciones fallidas o recojos tardíos; y la evidencia de impacto refuerza la motivación social del negocio. Este hallazgo se alinea con el persona de Luis Fernando Ramirez, quien necesita un proceso breve, medible y compatible con el cierre del local. En consecuencia, funcionalidades como publicacion express, horario limite visible, confirmacion digital y reportes de impacto no son extras, sino condiciones necesarias para adopcion.
+
+En el segmento de **albergues y organizaciones sociales**, las entrevistas muestran un patrón claro de abastecimiento inestable. Las organizaciones dependen de donaciones variables, muchas veces sin previsión ni información suficiente, lo que dificulta planificar raciones y rutas de recojo. Aun cuando algunas cuentan con movilidad propia o apoyo logístico, esa capacidad se desaprovecha si no reciben alertas oportunas y datos precisos sobre ubicación, cantidad y disponibilidad del alimento. Los testimonios indican que el problema no es únicamente conseguir donaciones, sino enterarse a tiempo y poder priorizar las más viables.
+
+Los hallazgos del segmento receptor coinciden con el persona de Maria Elena Torres: existe disposición para reaccionar rápido, pero se necesita visibilidad, trazabilidad y mejor coordinación. A partir de ello, se infiere que una plataforma útil para este grupo debe mostrar donaciones cercanas en tiempo real, facilitar la evaluación del recojo antes de salir y reducir la incertidumbre sobre si el alimento seguirá disponible al llegar. Por eso, la geolocalización, las alertas por proximidad, el detalle del paquete y la actualización del estado del recojo son elementos críticos para resolver su necesidad real.
+
+De manera transversal, ambas entrevistas permitieron extraer cinco hallazgos principales:
+
+- Existe disposición a participar en una red de donación si el proceso es rápido y confiable.
+- El tiempo es la variable más crítica en ambos segmentos: para el restaurante por el cierre operativo y para el albergue por la movilización inmediata.
+- La información mínima indispensable debe incluir tipo de alimento, cantidad, ubicación y horario límite de recojo.
+- La coordinación actual depende demasiado de medios informales, lo que genera pérdida de oportunidades y fallas de comunicación.
+- La confianza en el sistema aumenta cuando hay confirmación de reserva, validación de entrega y evidencia del impacto logrado.
+
+Con base en este análisis, se concluye que **Alimenta** debe diseñarse como una solución de respuesta rápida, centrada en logística de último minuto y no en procesos largos de donación tradicional. Las entrevistas no solo validan la necesidad del producto, sino que orientan directamente sus decisiones funcionales: interfaz simple para publicar, mapa de donaciones cercanas, notificaciones automáticas, coordinación visible del recojo y mecanismos de validación y trazabilidad. Estos hallazgos sirvieron como insumo para la construcción de los user personas, la matriz de tareas y los escenarios As-is y To-be del proyecto.
 
 ### 2.3. Needfinding
 
