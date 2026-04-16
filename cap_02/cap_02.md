@@ -293,7 +293,9 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
 </table>
 
-**Plantilla para siguientes entrevistas:**
+**Entrevista 3:**
+
+**Entrevistador:** Nelson Guerrero
 
 <table>
   <tr>
@@ -302,35 +304,35 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
   <tr>
     <td><strong>Nombre</strong></td>
-    <td></td>
+    <td>Andrea Bolivar</td>
   </tr>
   <tr>
     <td><strong>Edad / Genero</strong></td>
-    <td></td>
+    <td>21 años / Femenino</td>
   </tr>
   <tr>
     <td><strong>Distrito / residencia</strong></td>
-    <td></td>
+    <td>Santa Anita, Lima</td>
   </tr>
   <tr>
     <td><strong>Ocupacion / Cargo</strong></td>
-    <td></td>
+    <td>Administradora de restaurante</td>
   </tr>
   <tr>
     <td><strong>Marcas e Influencias</strong></td>
-    <td></td>
+    <td>Restaurante comida fusion peruana</td>
   </tr>
   <tr>
     <td><strong>Fecha de entrevista</strong></td>
-    <td></td>
+    <td>14/04/2026</td>
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td></td>
+    <td><3:49 minutos/td>
   </tr>
   <tr>
     <td><strong>Enlace a la grabacion</strong></td>
-    <td></td>
+    <td>https://youtu.be/Ktlc04fycwA</td>
   </tr>
   <tr>
     <td><strong>Captura de pantalla</strong></td>
@@ -338,7 +340,7 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
   <tr>
     <td><strong>Resumen del Caso</strong></td>
-    <td></td>
+    <td>La entrevistada actualmente se ve obligada a desechar excedentes aptos para el consumo por falta de logística. El equipo siente frustración por este desperdicio, pero el principal obstáculo para donar es la dificultad del transporte y la falta de tiempo para gestionar el proceso. Por ello, ella busca una solución digital que sea extremadamente fácil de usar y que resuelva el recojo inmediato de los alimentos sin complicaciones operativas.</td>
   </tr>
 </table>
 
