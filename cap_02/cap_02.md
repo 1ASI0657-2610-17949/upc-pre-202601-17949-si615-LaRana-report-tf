@@ -395,6 +395,59 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
 </table>
 
+**Entrevista 3:**
+
+**Entrevistador:** Nelson Guerrero
+
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td>Milenio Huaman</td>
+  </tr>
+  <tr>
+    <td><strong>Edad / Genero</strong></td>
+    <td>29 anos / Masculino</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito / residencia</strong></td>
+    <td>La Molina, Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Ocupacion / Cargo</strong></td>
+    <td>Coordinador de Albergue</td>
+  </tr>
+  <tr>
+    <td><strong>Marcas e Influencias</strong></td>
+    <td>Iniciativas nacionales de rescate de alimentos, bancos de comida y herramientas digitales de geolocalización para optimización de recojos.</td>
+  </tr>
+  <tr>
+    <td><strong>Fecha de entrevista</strong></td>
+    <td>15/04/2026</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>6:22 minutos</td>
+  </tr>
+  <tr>
+    <td><strong>Enlace a la grabacion</strong></td>
+    <td>https://youtu.be/ynlSfv5Geyk</td>
+  </tr>
+  <tr>
+    <td><strong>Captura de pantalla</strong></td>
+    <td><img width="1917" alt="Image" src=" PENDIENTE " /></td>
+  </tr>
+  <tr>
+    <td><strong>Resumen del Caso</strong></td>
+    <td>La organización enfrenta una constante inestabilidad en su suministro alimentario. Resulta imperativo implementar una herramienta de comunicación ágil y con geolocalización que vincule los excedentes disponibles con su ubicación, permitiendo una logística eficiente que maximice el uso del transporte y reduzca el desperdicio por falta de gestión.</td>
+  </tr>
+</table>
+
+
+
 **Plantilla para siguientes entrevistas:**
 
 <table>
