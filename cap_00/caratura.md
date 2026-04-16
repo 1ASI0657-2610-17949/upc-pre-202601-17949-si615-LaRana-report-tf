@@ -59,15 +59,135 @@ Link del repositorio: [Enlace](https://github.com/1ASI0657-2610-17949/Documentat
                <th>Descripción de modificaciones</th>
             </tr>
          </thead>
-         <tbody>
-            <tr>
-               <td>1.0</td>
-               <td>13/04/2026</td>
-               <td>Quique Jara</td>
-               <td>Caratula y estructura del informe</td>
-            </tr>
-         </tbody>
-    </table>
+          <tbody>
+             <tr>
+                <td>0.1</td>
+                <td>10/04/2026</td>
+                <td>Quique Jara</td>
+                <td>Creación de la carátula de trabajo y definición de la estructura base del Capítulo I.</td>
+             </tr>
+             <tr>
+                <td>0.2</td>
+                <td>10/04/2026</td>
+                <td>Anderson Gonza Morales</td>
+                <td>Redacción inicial de la sección 1.1.1 correspondiente a la descripción de la startup.</td>
+             </tr>
+             <tr>
+                <td>0.3</td>
+                <td>11/04/2026</td>
+                <td>Cesar Augusto Navarro Correa</td>
+                <td>Desarrollo de la sección 1.1.2 con la organización de perfiles de los integrantes del equipo.</td>
+             </tr>
+             <tr>
+                <td>0.4</td>
+                <td>12/04/2026</td>
+                <td>Rafael Augusto Tasayco Almonacid</td>
+                <td>Elaboración de la sección 1.2.1 en los apartados What, When y Where de la problemática.</td>
+             </tr>
+             <tr>
+                <td>0.5</td>
+                <td>13/04/2026</td>
+                <td>Guerrero Tomas Nelson Fabrizio</td>
+                <td>Desarrollo de los apartados Who, Why, How y How much dentro de antecedentes y problemática.</td>
+             </tr>
+             <tr>
+                <td>0.6</td>
+                <td>14/04/2026</td>
+                <td>Quique Jara</td>
+                <td>Integración de la sección 1.2.2 con los Lean UX Problem Statements y ajustes de redacción general.</td>
+             </tr>
+             <tr>
+                <td>0.7</td>
+                <td>15/04/2026</td>
+                <td>Anderson Gonza Morales</td>
+                <td>Consolidación final del Capítulo I con Assumptions, Hypothesis Statements, Lean UX Canvas y correcciones menores.</td>
+             </tr>
+             <tr>
+                <td>0.8</td>
+                <td>10/04/2026</td>
+                <td>Quique Jara</td>
+                <td>Definición de la estructura base del Capítulo II y organización de las secciones de competidores y entrevistas.</td>
+             </tr>
+             <tr>
+                <td>0.9</td>
+                <td>11/04/2026</td>
+                <td>Anderson Gonza Morales</td>
+                <td>Desarrollo del análisis competitivo en 2.1.1 con la tabla comparativa de Alimenta frente a sus principales competidores.</td>
+             </tr>
+             <tr>
+                <td>1.0</td>
+                <td>11/04/2026</td>
+                <td>Cesar Augusto Navarro Correa</td>
+                <td>Redacción de la sección 2.1.2 con estrategias y tácticas planteadas frente a competidores del sector.</td>
+             </tr>
+             <tr>
+                <td>1.1</td>
+                <td>12/04/2026</td>
+                <td>Guerrero Tomas Nelson Fabrizio</td>
+                <td>Elaboración de 2.2.1 con el diseño de entrevistas para restaurantes y organizaciones sociales.</td>
+             </tr>
+             <tr>
+                <td>1.2</td>
+                <td>13/04/2026</td>
+                <td>Quique Jara</td>
+                <td>Registro de entrevistas del segmento de restaurantes, incluyendo evidencias, enlaces y síntesis de hallazgos principales.</td>
+             </tr>
+             <tr>
+                <td>1.3</td>
+                <td>14/04/2026</td>
+                <td>Rafael Augusto Tasayco Almonacid</td>
+                <td>Incorporación de entrevistas del segmento de albergues y apoyo en la consolidación del análisis de entrevistas.</td>
+             </tr>
+             <tr>
+                <td>1.4</td>
+                <td>15/04/2026</td>
+                <td>Anderson Gonza Morales</td>
+                <td>Consolidación de 2.3 Needfinding con user personas, task matrix, empathy maps, as-is scenario mapping y ajustes finales del capítulo.</td>
+             </tr>
+             <tr>
+                <td>1.5</td>
+                <td>10/04/2026</td>
+                <td>Quique Jara</td>
+                <td>Definición de la estructura base del Capítulo III y organización inicial de escenarios objetivo, épicas e historias.</td>
+             </tr>
+             <tr>
+                <td>1.6</td>
+                <td>11/04/2026</td>
+                <td>Anderson Gonza Morales</td>
+                <td>Desarrollo de la sección 3.1 con los To-Be Scenario Mapping para restaurante y albergue.</td>
+             </tr>
+             <tr>
+                <td>1.7</td>
+                <td>12/04/2026</td>
+                <td>Cesar Augusto Navarro Correa</td>
+                <td>Redacción de 3.2 Epics y definición de capacidades principales del producto a partir de los hallazgos previos.</td>
+             </tr>
+             <tr>
+                <td>1.8</td>
+                <td>13/04/2026</td>
+                <td>Guerrero Tomas Nelson Fabrizio</td>
+                <td>Desglose de 3.3 User Stories con criterios de aceptación para el flujo funcional de restaurantes y ONGs.</td>
+             </tr>
+             <tr>
+                <td>1.9</td>
+                <td>14/04/2026</td>
+                <td>Rafael Augusto Tasayco Almonacid</td>
+                <td>Incorporación de 3.4 Impact Mapping y apoyo en la revisión de consistencia entre épicas e historias de usuario.</td>
+             </tr>
+             <tr>
+                <td>2.0</td>
+                <td>15/04/2026</td>
+                <td>Quique Jara</td>
+                <td>Redacción de 3.5 Technical Stories orientadas a mensajería, geolocalización y trazabilidad técnica de la solución.</td>
+             </tr>
+             <tr>
+                <td>2.1</td>
+                <td>15/04/2026</td>
+                <td>Anderson Gonza Morales</td>
+                <td>Consolidación de 3.6 Product Backlog y ajustes finales del Capítulo III para cierre del registro de avances.</td>
+             </tr>
+            </tbody>
+     </table>
 </span>
 </div>
 
@@ -220,33 +340,33 @@ permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcom
       <td style="border: 1px solid black;">Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</td>
       <td style="border: 1px solid black;">
         Anderson Gonza Morales<br/>
-        TB1<br/><br/>
+        TB1: Elaboró el análisis competitivo y comparó referentes del sector.<br/><br/>
         Quique Vladimir Jara Benites<br/>
-        TB1<br/><br/>
+        TB1: Organizó la carátula, el registro de versiones y la estructura del informe.<br/><br/>
         Cesar Augusto Navarro Correa<br/>
-        TB1<br/><br/>
+        TB1: Redactó épicas y tácticas del proyecto a partir de la investigación realizada.<br/><br/>
         Rafael Augusto Tasayco Almonacid<br/>
-        TB1<br/><br/>
+        TB1: Registró entrevistas y consolidó hallazgos del segmento de albergues.<br/><br/>
         Guerrero Tomas Nelson Fabrizio<br/>
-        TB1
+        TB1: Diseñó preguntas de entrevista y apoyó el desglose de historias de usuario.
       </td>
-      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;">Durante el TB1, cada integrante aplicó conocimientos nuevos de análisis, documentación y levantamiento de requisitos para construir aportes concretos al informe del proyecto.</td>
     </tr>
     <tr>
       <td style="border: 1px solid black;">Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</td>
       <td style="border: 1px solid black;">
         Anderson Gonza Morales<br/>
-        TB1<br/><br/>
+        TB1: Revisó referentes del mercado para mejorar el enfoque competitivo del proyecto.<br/><br/>
         Quique Vladimir Jara Benites<br/>
-        TB1<br/><br/>
+        TB1: Ajustó la documentación según nuevos hallazgos y aportes del equipo.<br/><br/>
         Cesar Augusto Navarro Correa<br/>
-        TB1<br/><br/>
+        TB1: Refinó las épicas con base en la información obtenida en la investigación.<br/><br/>
         Rafael Augusto Tasayco Almonacid<br/>
-        TB1<br/><br/>
+        TB1: Incorporó aprendizajes de entrevistas para mejorar la definición del usuario receptor.<br/><br/>
         Guerrero Tomas Nelson Fabrizio<br/>
-        TB1
+        TB1: Actualizó preguntas y stories conforme avanzó el entendimiento del problema.
       </td>
-      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;">El equipo demostró aprendizaje permanente al ajustar sus aportes durante el TB1 conforme surgieron nuevos hallazgos, mejorando progresivamente la calidad del análisis y la definición del proyecto.</td>
     </tr>
   </tbody>
 </table>

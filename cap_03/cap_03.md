@@ -318,11 +318,12 @@ _(Esta seccion se completara a partir del desglose de las epicas definidas.)_
 ## 3.4. Impact Mapping
 
 ##### Impact Mapping - Gestión de Excedentes en Restaurante
+
 <img width="1240" height="1962" alt="Image" src="https://github.com/user-attachments/assets/ab4709c6-3287-4274-9be9-06f1df8d1df3" />
 
 ##### Impact Mapping - Búsqueda de Donaciones en Albergue
 
-<img alt="Image" src="https://github.com/user-attachments/assets/88e5e207-45db-4780-a043-7535bada593a" /> 
+<img alt="Image" src="https://github.com/user-attachments/assets/88e5e207-45db-4780-a043-7535bada593a" />
 
 ## 3.5. Technical Stories
 
@@ -442,3 +443,9 @@ Las siguientes technical stories complementan las historias funcionales del prod
     <tr><td>39</td><td>TS06</td><td>Configurar bucket S3 para almacenamiento de evidencias</td><td>Permite almacenar y recuperar fotos de evidencia con acceso controlado.</td><td>5</td></tr>
     <tr><td>40</td><td>TS07</td><td>Publicar evento entrega.validada y persistir trazabilidad</td><td>Registra la entrega confirmada y emite el evento correspondiente para trazabilidad completa.</td><td>5</td></tr>
     </table>
+
+**Fuentes Bibliográficas:**
+
+- Bedoya-Perales, N. S., & Dal’ Magro, E. (2021). Cuantificación de las pérdidas y el desperdicio de alimentos en el Perú: un análisis de flujo másico a lo largo de la cadena de suministro de alimentos. _Sustainability, 13_(6), 3326. [https://doi.org/10.3390/su13063326](https://doi.org/10.3390/su13063326)
+- Banco de Alimentos Perú. (2024). _Estadísticas de desperdicio y hambre en el Perú_. [https://bancodealimentosperu.org/](https://bancodealimentosperu.org/)
+- FAO, IFAD, UNICEF, WFP & WHO. (2023). _The State of Food Security and Nutrition in the World 2023. Urbanization, agrifood systems transformation and healthy diets across the rural–urban continuum_. FAO. [https://doi.org/10.4060/cc3017en](https://doi.org/10.4060/cc3017en)

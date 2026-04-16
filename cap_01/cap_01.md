@@ -41,6 +41,7 @@
   </tr>
   <tr>
     <td>
+    <img alt="Image" src="https://github.com/user-attachments/assets/35932ec5-e9cc-456a-8538-07b828b92784" />
     </td>
     <td>
       <strong>Cesar Augusto Navarro Correa - U202310129</strong><br>
@@ -247,9 +248,3 @@ Este segmento incluye a las entidades encargadas de brindar alimentación a pobl
 - **Edad:** 25 a 65 años.
 - **Necesidad clave:** Acceso oportuno a raciones de alimentos de calidad, reducción de costos operativos en alimentación, visibilidad de excedentes disponibles en tiempo real y optimización de rutas de recojo.
 - **Uso de tecnología:** Nivel medio. Utilizan principalmente dispositivos móviles para comunicación vía WhatsApp, redes sociales para recaudación y navegación GPS para la logística de recojo.
-
-**Fuentes Bibliográficas:**
-
-- Bedoya-Perales, N. S., & Dal’ Magro, E. (2021). Cuantificación de las pérdidas y el desperdicio de alimentos en el Perú: un análisis de flujo másico a lo largo de la cadena de suministro de alimentos. _Sustainability, 13_(6), 3326. [https://doi.org/10.3390/su13063326](https://doi.org/10.3390/su13063326)
-- Banco de Alimentos Perú. (2024). _Estadísticas de desperdicio y hambre en el Perú_. [https://bancodealimentosperu.org/](https://bancodealimentosperu.org/)
-- FAO, IFAD, UNICEF, WFP & WHO. (2023). _The State of Food Security and Nutrition in the World 2023. Urbanization, agrifood systems transformation and healthy diets across the rural–urban continuum_. FAO. [https://doi.org/10.4060/cc3017en](https://doi.org/10.4060/cc3017en)

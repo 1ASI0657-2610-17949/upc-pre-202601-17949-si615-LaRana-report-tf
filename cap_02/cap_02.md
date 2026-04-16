@@ -242,6 +242,57 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
 </table>
 
+**Entrevista 2:**
+
+**Entrevistador:** Vladimir Jara
+
+<table>
+  <tr>
+    <th>Atributo</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td>Luis Fernando Ramirez Soto</td>
+  </tr>
+  <tr>
+    <td><strong>Edad / Genero</strong></td>
+    <td>34 anos / Masculino</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito / residencia</strong></td>
+    <td>Chorrillos, Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Ocupacion / Cargo</strong></td>
+    <td>Administrador de restaurante</td>
+  </tr>
+  <tr>
+    <td><strong>Marcas e Influencias</strong></td>
+    <td>Restaurantes con enfoque de desperdicio cero y compromiso social visible.</td>
+  </tr>
+  <tr>
+    <td><strong>Fecha de entrevista</strong></td>
+    <td>13/04/2026</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>15 minutos</td>
+  </tr>
+  <tr>
+    <td><strong>Enlace a la grabacion</strong></td>
+    <td>Pendiente</td>
+  </tr>
+  <tr>
+    <td><strong>Captura de pantalla</strong></td>
+    <td><img alt="Image" src="https://github.com/user-attachments/assets/783785fb-be39-4767-871c-592c6d776bd4" /></td>
+  </tr>
+  <tr>
+    <td><strong>Resumen del Caso</strong></td>
+    <td>El entrevistado señala que en su restaurante si existen excedentes de comida en buen estado al cierre del turno, pero suelen descartarse por falta de tiempo, coordinación inmediata y un proceso simple de donación, por lo que valora una solución digital que permita publicar rápidamente, confirmar el recojo y dar trazabilidad al impacto generado.</td>
+  </tr>
+</table>
+
 **Plantilla para siguientes entrevistas:**
 
 <table>
@@ -336,7 +387,7 @@ A continuación, se presentan las tablas de registro preparadas para documentar 
   </tr>
   <tr>
     <td><strong>Captura de pantalla</strong></td>
-    <td>Pendiente</td>
+    <td><img alt="Image" src="https://github.com/user-attachments/assets/24a5468e-ab6a-42fa-be36-f6b54e50edbe" /></td>
   </tr>
   <tr>
     <td><strong>Resumen del Caso</strong></td>
