@@ -347,6 +347,56 @@ _(Esta seccion se completara a partir del desglose de las epicas definidas.)_
   </tbody>
 </table>
 
+## Requerimientos No Funcionales
+Los siguientes requerimientos no funcionales definen las restricciones de calidad del sistema, considerando la naturaleza en tiempo real del rescate de alimentos y la necesidad de garantizar disponibilidad, rendimiento y confiabilidad.
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>RNF</th>
+      <th>Titulo</th>
+      <th>Descripcion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RNF01</td>
+      <td>Tiempo de respuesta</td>
+      <td>El sistema debe permitir registrar un paquete alimentario en un tiempo menor o igual a 2 segundos.</td>
+    </tr>
+    <tr>
+      <td>RNF02</td>
+      <td>Tiempo de notificación</td>
+      <td>El sistema debe enviar notificaciones a las ONGs en un tiempo menor a 5 segundos tras la publicación o liberación de un paquete.</td>
+    </tr>
+    <tr>
+      <td>RNF03</td>
+      <td>Disponibilidad del sistema</td>
+      <td>El sistema debe garantizar una disponibilidad mínima del 99.5% mensual.</td>
+    </tr>
+    <tr>
+      <td>RNF04</td>
+      <td>Escalabilidad</td>
+      <td>El sistema debe soportar al menos 1,000 usuarios concurrentes sin degradación significativa del rendimiento.</td>
+    </tr>
+    <tr>
+      <td>RNF05</td>
+      <td>Autenticación</td>
+      <td>El sistema debe requerir autenticación para el inicio de sesion(Login).</td>
+    </tr>
+    <tr>
+      <td>RNF06</td>
+      <td>Consistencia de reservas</td>
+      <td>El sistema debe garantizar que un paquete alimentario no pueda ser reservado por más de una ONG al mismo tiempo.</td>
+    </tr>
+    <tr>
+      <td>RNF07</td>
+      <td>Manejo de fallos</td>
+      <td>El sistema debe continuar operando ante fallos parciales en servicios como notificaciones, evitando la pérdida de información.</td>
+    </tr>
+  </tbody>
+</table>
+
 ## 3.4. Impact Mapping
 
 ##### Impact Mapping - Gestión de Excedentes en Restaurante
