@@ -63,6 +63,16 @@ Las siguientes epicas sintetizan las capacidades principales que **Alimenta** de
       <td>Registro de evidencias e impacto</td>
       <td>La ONG sube fotos del recojo y ambos actores pueden consultar su historial de donaciones realizadas.</td>
     </tr>
+    <tr>
+      <td>EP09</td>
+      <td>Gestión automática de expiración</td>
+      <td>El sistema cancela automaticamente paquetes no recogidos al alcanzar su horario limite.</td>
+    </tr>
+    <tr>
+      <td>EP10</td>
+      <td>Reasignación automática de paquetes</td>
+      <td>Si una ONG no recoge a tiempo, el sistema libera el paquete y se notifica a otras ONGs disponibles.</td>
+    </tr>
   </tbody>
 </table>
 
