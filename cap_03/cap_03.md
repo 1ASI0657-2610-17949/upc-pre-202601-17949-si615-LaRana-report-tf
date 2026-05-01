@@ -322,6 +322,28 @@ _(Esta seccion se completara a partir del desglose de las epicas definidas.)_
       <td><strong>E01 - Filtro por tipo o estado:</strong> Dado que el usuario se encuentra en su historial, cuando selecciona un filtro como publicadas, recibidas, reservadas o completadas, entonces el sistema muestra solo los registros que coinciden con ese criterio.<br><br><strong>E02 - Sin resultados para el filtro:</strong> Dado que el usuario aplica un filtro sin coincidencias, cuando el sistema procesa la consulta, entonces informa que no existen registros para esa seleccion.</td>
       <td>EP08</td>
     </tr>
+    <tr>
+      <td>US34</td>
+      <td>Expiración automática de paquete alimentario</td>
+      <td>Como sistema, quiero cancelar automáticamente un paquete alimentario cuando se alcance su horario límite de recojo,
+      para evitar que paquetes vencidos sigan disponibles en la plataforma.</td>
+      <td><strong>E01 - Expiración automática exitosa:</strong> Dado que existe un paquete publicado con un horario límite definido, cuando el sistema detecta que la hora actual supera dicho horario, entonces el sistema cambia el estado del paquete a “expirado” y deja de mostrarlo como disponible.<br><br><strong>E02 - Paquete ya reservado o completado:</strong> Dado que un paquete ya ha sido recogido o se encuentra en estado “completado”, cuando se alcanza el horario límite, entonces el sistema no modifica su estado ni ejecuta la expiración.</td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>US35</td>
+      <td>Reasignación (notificación a otras ONGs)</td>
+      <td>Como sistema, quiero liberar un paquete reservado si no es recogido dentro del tiempo establecido, para permitir que otras ONGs puedan acceder a él antes de que expire.</td>
+      <td><strong>E01 - Liberación por incumplimiento de recojo:</strong> Dado que una ONG ha reservado un paquete, cuando no se realiza la confirmación de recojo dentro del tiempo límite definido, entonces el sistema cambia el estado del paquete a “disponible” y elimina la reserva actual.<br><br><strong>E02 - Paquete recogido correctamente:</strong> Dado que la ONG confirma el recojo dentro del tiempo establecido, cuando se valida la entrega del paquete, entonces el sistema mantiene el estado como “completado” y no ejecuta la liberación.</td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>US36</td>
+      <td>Notificación automática tras liberación de paquete</td>
+      <td>Como sistema, quiero notificar a otras ONGs cercanas cuando un paquete vuelve a estar disponible, para incrementar las probabilidades de que sea recogido a tiempo.</td>
+      <td><strong>E01 - Notificación a ONGs disponibles:</strong> Dado que un paquete ha sido liberado nuevamente, cuando el sistema actualiza su estado a “disponible”, entonces se envía una notificación a las ONGs cercanas registradas en la plataforma.<br><br><strong>E02 - Sin ONGs disponibles:</strong> Dado que no existen ONGs cercanas o activas en el momento de la liberación, cuando el sistema intenta enviar la notificación, entonces no se genera error y el paquete permanece disponible en la plataforma.</td>
+      <td>EP10</td>
+    </tr>
   </tbody>
 </table>
 
