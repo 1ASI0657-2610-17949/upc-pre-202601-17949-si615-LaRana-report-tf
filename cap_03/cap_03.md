@@ -63,6 +63,16 @@ Las siguientes epicas sintetizan las capacidades principales que **Alimenta** de
       <td>Registro de evidencias e impacto</td>
       <td>La ONG sube fotos del recojo y ambos actores pueden consultar su historial de donaciones realizadas.</td>
     </tr>
+    <tr>
+      <td>EP09</td>
+      <td>Gestión automática de expiración</td>
+      <td>El sistema cancela automaticamente paquetes no recogidos al alcanzar su horario limite.</td>
+    </tr>
+    <tr>
+      <td>EP10</td>
+      <td>Reasignación automática de paquetes</td>
+      <td>Si una ONG no recoge a tiempo, el sistema libera el paquete y se notifica a otras ONGs disponibles.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -311,6 +321,78 @@ _(Esta seccion se completara a partir del desglose de las epicas definidas.)_
       <td>Como restaurante u ONG<br>Quiero filtrar mi historial de donaciones por tipo de accion o estado<br>Para identificar rapidamente las donaciones publicadas, recibidas o completadas.</td>
       <td><strong>E01 - Filtro por tipo o estado:</strong> Dado que el usuario se encuentra en su historial, cuando selecciona un filtro como publicadas, recibidas, reservadas o completadas, entonces el sistema muestra solo los registros que coinciden con ese criterio.<br><br><strong>E02 - Sin resultados para el filtro:</strong> Dado que el usuario aplica un filtro sin coincidencias, cuando el sistema procesa la consulta, entonces informa que no existen registros para esa seleccion.</td>
       <td>EP08</td>
+    </tr>
+    <tr>
+      <td>US34</td>
+      <td>Expiración automática de paquete alimentario</td>
+      <td>Como sistema, quiero cancelar automáticamente un paquete alimentario cuando se alcance su horario límite de recojo,
+      para evitar que paquetes vencidos sigan disponibles en la plataforma.</td>
+      <td><strong>E01 - Expiración automática exitosa:</strong> Dado que existe un paquete publicado con un horario límite definido, cuando el sistema detecta que la hora actual supera dicho horario, entonces el sistema cambia el estado del paquete a “expirado” y deja de mostrarlo como disponible.<br><br><strong>E02 - Paquete ya reservado o completado:</strong> Dado que un paquete ya ha sido recogido o se encuentra en estado “completado”, cuando se alcanza el horario límite, entonces el sistema no modifica su estado ni ejecuta la expiración.</td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>US35</td>
+      <td>Reasignación (notificación a otras ONGs)</td>
+      <td>Como sistema, quiero liberar un paquete reservado si no es recogido dentro del tiempo establecido, para permitir que otras ONGs puedan acceder a él antes de que expire.</td>
+      <td><strong>E01 - Liberación por incumplimiento de recojo:</strong> Dado que una ONG ha reservado un paquete, cuando no se realiza la confirmación de recojo dentro del tiempo límite definido, entonces el sistema cambia el estado del paquete a “disponible” y elimina la reserva actual.<br><br><strong>E02 - Paquete recogido correctamente:</strong> Dado que la ONG confirma el recojo dentro del tiempo establecido, cuando se valida la entrega del paquete, entonces el sistema mantiene el estado como “completado” y no ejecuta la liberación.</td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>US36</td>
+      <td>Notificación automática tras liberación de paquete</td>
+      <td>Como sistema, quiero notificar a otras ONGs cercanas cuando un paquete vuelve a estar disponible, para incrementar las probabilidades de que sea recogido a tiempo.</td>
+      <td><strong>E01 - Notificación a ONGs disponibles:</strong> Dado que un paquete ha sido liberado nuevamente, cuando el sistema actualiza su estado a “disponible”, entonces se envía una notificación a las ONGs cercanas registradas en la plataforma.<br><br><strong>E02 - Sin ONGs disponibles:</strong> Dado que no existen ONGs cercanas o activas en el momento de la liberación, cuando el sistema intenta enviar la notificación, entonces no se genera error y el paquete permanece disponible en la plataforma.</td>
+      <td>EP10</td>
+    </tr>
+  </tbody>
+</table>
+
+## Requerimientos No Funcionales
+Los siguientes requerimientos no funcionales definen las restricciones de calidad del sistema, considerando la naturaleza en tiempo real del rescate de alimentos y la necesidad de garantizar disponibilidad, rendimiento y confiabilidad.
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>RNF</th>
+      <th>Titulo</th>
+      <th>Descripcion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RNF01</td>
+      <td>Tiempo de respuesta</td>
+      <td>El sistema debe permitir registrar un paquete alimentario en un tiempo menor o igual a 2 segundos.</td>
+    </tr>
+    <tr>
+      <td>RNF02</td>
+      <td>Tiempo de notificación</td>
+      <td>El sistema debe enviar notificaciones a las ONGs en un tiempo menor a 5 segundos tras la publicación o liberación de un paquete.</td>
+    </tr>
+    <tr>
+      <td>RNF03</td>
+      <td>Disponibilidad del sistema</td>
+      <td>El sistema debe garantizar una disponibilidad mínima del 99.5% mensual.</td>
+    </tr>
+    <tr>
+      <td>RNF04</td>
+      <td>Escalabilidad</td>
+      <td>El sistema debe soportar al menos 1,000 usuarios concurrentes sin degradación significativa del rendimiento.</td>
+    </tr>
+    <tr>
+      <td>RNF05</td>
+      <td>Autenticación</td>
+      <td>El sistema debe requerir autenticación para el inicio de sesion(Login).</td>
+    </tr>
+    <tr>
+      <td>RNF06</td>
+      <td>Consistencia de reservas</td>
+      <td>El sistema debe garantizar que un paquete alimentario no pueda ser reservado por más de una ONG al mismo tiempo.</td>
+    </tr>
+    <tr>
+      <td>RNF07</td>
+      <td>Manejo de fallos</td>
+      <td>El sistema debe continuar operando ante fallos parciales en servicios como notificaciones, evitando la pérdida de información.</td>
     </tr>
   </tbody>
 </table>
