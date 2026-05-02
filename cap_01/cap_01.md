@@ -150,28 +150,28 @@ Nuestro sistema busca facilitar a los restaurantes la gestión y publicación in
 **¿Cómo podemos lograr que el personal de los restaurantes publique paquetes de alimentos de forma tan rápida y sencilla que prefieran donar antes que desechar?**
 
 **Problem Statement 2: El Receptor (Albergue/ONG)**
-El producto tiene como objetivo proporcionar a los albergues y organizaciones sociales acceso en tiempo real a raciones de alimentos gratuitas o de costo simbólico. Actualmente, estas organizaciones dependen de donaciones esporádicas y carecen de visibilidad sobre excedentes disponibles en su zona, lo que afecta su capacidad para alimentar a sus beneficiarios de forma regular.
+El producto tiene como objetivo proporcionar a los albergues y organizaciones sociales acceso rápido a donaciones de alimentos disponibles gratuitos o de costo simbólico. Actualmente, estas organizaciones dependen de donaciones esporádicas y carecen de conocer qué donaciones hay cerca y a tiempo, lo que afecta su capacidad para alimentar a sus beneficiarios de forma regular.
 **¿Cómo podemos mejorar el acceso de los albergues a información oportuna sobre donaciones cercanas para optimizar su logística de recojo y abastecimiento?**
 
 **Problem Statement 3: La Brecha Logística**
-Nuestro servicio está orientado a cerrar la brecha de tiempo entre la generación del excedente y su consumo final. Observamos que la "ventana de frescura" de la comida preparada es muy corta, y la falta de un puente logístico inmediato causa que miles de raciones se pierdan cada noche.
+Nuestro servicio está orientado a reducir el tiempo entre la generación del excedente y su consumo final. Observamos que la "ventana de frescura" de la comida preparada es muy corta, y la falta de una forma rápida de coordinar causa que miles de raciones se pierdan cada noche.
 **¿Cómo podemos asegurar que la coordinación entre el donante y el receptor se realice en menos de 60 minutos para garantizar la seguridad alimentaria y calidad de las raciones?**
 
 ##### 1.2.2.2. Lean UX Assumptions
 
 #### Business Assumptions
 
-1.  **Creo que mis clientes necesitan** una plataforma ágil que elimine la fricción logística de donar excedentes alimentarios.
-2.  **Estas necesidades se pueden resolver con** una aplicación móvil que use geolocalización y notificaciones push para conectar donantes y receptores en tiempo real.
+1.  **Creo que mis clientes necesitan** una forma rápida y sencilla de donar excedentes alimentos sin complicaciones.
+2.  **Estas necesidades se pueden resolver con** una aplicación móvil que permita ver donaciones cercanas y recibir alertas en tiempo real.
 3.  **Mis clientes iniciales serán** restaurantes de mediano y gran tamaño en zonas urbanas densas, y ONGs/albergues con capacidad de movilidad.
 4.  **El valor más importante que el cliente quiere de mi servicio es** reducir su huella de desperdicio (para el restaurante) y asegurar alimentación de calidad sin costo (para el albergue).
 5.  **El cliente también puede obtener estos beneficios adicionales:** certificados de donación para beneficios tributarios, mejora de imagen corporativa (RSC) y métricas de impacto socioambiental.
 6.  **Voy a adquirir la mayoría de mis clientes a través de** alianzas con la Asociación de Hoteles, Restaurantes y Afines (AHORA), municipalidades y redes de apoyo social.
 7.  **Haré dinero a través de** un modelo de suscripción premium para restaurantes (con reportes avanzados de impacto) y convenios corporativos con proveedores logísticos.
 8.  **Mi competencia principal en el mercado será** el Banco de Alimentos Perú (aunque somos complementarios por la inmediatez) y aplicaciones comerciales de "paquetes sorpresa" como Buen n' Barato.
-9.  **Los venceremos debido a** nuestro enfoque exclusivo en impacto social (gratuitad para albergues) y una interfaz diseñada para ser operada en menos de 30 segundos.
+9.  **Los venceremos debido a** nuestro enfoque exclusivo en impacto social (gratuitad para albergues) y una experiencia rápida y fácil de usar que permita donar en pocos segundos.
 10. **Mi mayor riesgo de producto es que** los restaurantes no encuentren un receptor a tiempo y la comida se pierda, o que los albergues no tengan transporte para el recojo.
-11. **Resolveremos esto a través de** un sistema de alertas por radio geográfico escalonado y alianzas con servicios de motorizados/delivery voluntarios.
+11. **Resolveremos esto a través de** notificaciones a organizaciones cercanas para aumentar las probabilidades de recojo y alianzas con servicios de motorizados/delivery voluntarios.
 
 #### User Assumptions
 
@@ -182,7 +182,7 @@ Los usuarios de **Alimenta** son administradores y personal operativo de restaur
 La falta de tiempo y canales directos para donar comida antes de que expire, la ausencia de visibilidad de las necesidades en tiempo real y la ineficiencia logística que convierte excedentes valiosos en basura.
 
 **¿Qué características son importantes?**
-Publicación express (foto/cantidad/hora), geolocalización de puntos de recojo, notificaciones automáticas para receptores cercanos, historial de impacto (toneladas rescatadas) y sistema de validación segura por QR.
+Publicación express (foto/cantidad/hora), ver donaciones cercanas, recibir alertas cuando haya alimentos disponibles para receptores cercanos, historial de impacto (toneladas rescatadas) y sistema de validación segura por QR.
 
 **¿Dónde encaja nuestro producto en su trabajo o vida?**
 Se integra en la rutina de cierre de los restaurantes y en la planificación diaria de menús de los albergues.
@@ -191,7 +191,7 @@ Se integra en la rutina de cierre de los restaurantes y en la planificación dia
 Principalmente al finalizar turnos de comida (3:00 PM y 11:00 PM) mediante una plataforma móvil intuitiva donde la velocidad de respuesta es crítica.
 
 **¿Cómo debe verse nuestro producto y cómo comportarse?**
-Debe verse premium, limpio y profesional. Debe comportarse de forma reactiva, enviando alertas visuales y sonoras claras a los albergues para asegurar que ninguna donación se pierda.
+Debe verse premium, limpio y profesional. Debe comportarse de forma reactiva, avisando de forma clara y oportuna cuando haya nuevas donaciones a los albergues para asegurar que ninguna donación se pierda.
 
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 
@@ -200,7 +200,7 @@ Debe verse premium, limpio y profesional. Debe comportarse de forma reactiva, en
   **Sabremos que** hemos tenido éxito **cuando** los donantes activos realicen al menos 3 publicaciones semanales de forma constante.
 
 - **Hypothesis 02:**
-  **Creemos que** los albergues lograrán un abastecimiento más variado y de calidad si reciben alertas en tiempo real basadas en su geolocalización.
+  **Creemos que** los albergues lograrán un abastecimiento más variado y de calidad si reciben alertas rápidas sobre donaciones cercanas.
   **Sabremos que** hemos tenido éxito **cuando** la tasa de reserva de paquetes publicados supere el 70% dentro de la primera hora de publicación.
 
 - **Hypothesis 03:**
