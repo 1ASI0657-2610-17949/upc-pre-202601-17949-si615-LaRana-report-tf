@@ -186,8 +186,38 @@ Link del repositorio: [Enlace](https://github.com/1ASI0657-2610-17949/Documentat
                 <td>Anderson Gonza Morales</td>
                 <td>Consolidación de 3.6 Product Backlog y ajustes finales del Capítulo III para cierre del registro de avances.</td>
              </tr>
-            </tbody>
-     </table>
+             <tr>
+                <td>2.2</td>
+                <td>27/04/2026</td>
+                <td>Quique Vladimir Jara Benites</td>
+                <td>Definición de la estructura base del Capítulo IV y organización inicial de principios de diseño, estilos arquitectónicos y viewpoints del proyecto.</td>
+             </tr>
+             <tr>
+                <td>2.3</td>
+                <td>28/04/2026</td>
+                <td>Anderson Gonza Morales</td>
+                <td>Elaboración y ajuste de los diagramas C4 de contexto, contenedores y componentes para representar la arquitectura propuesta de Alimenta.</td>
+             </tr>
+             <tr>
+                <td>2.4</td>
+                <td>29/04/2026</td>
+                <td>Cesar Augusto Navarro Correa</td>
+                <td>Modelado de los diagramas de clases por dominio para Auth, Donations, Matching, Food Safety, Logistics y Social Impact, alineados al enfoque DDD.</td>
+             </tr>
+             <tr>
+                <td>2.5</td>
+                <td>30/04/2026</td>
+                <td>Rafael Augusto Tasayco Almonacid</td>
+                <td>Diseño del diagrama relacional de base de datos y definición de entidades, relaciones y separación entre Core DB y bases especializadas.</td>
+             </tr>
+             <tr>
+                <td>2.6</td>
+                <td>01/05/2026</td>
+                <td>Guerrero Tomas Nelson Fabrizio</td>
+                <td>Desarrollo de los diagramas UML de actividades y estados, además de la integración de tácticas, patrones y drivers arquitectónicos en el Capítulo IV.</td>
+             </tr>
+             </tbody>
+      </table>
 </span>
 </div>
 
@@ -340,33 +370,43 @@ permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcom
       <td style="border: 1px solid black;">Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</td>
       <td style="border: 1px solid black;">
         Anderson Gonza Morales<br/>
-        TB1: Elaboró el análisis competitivo y comparó referentes del sector.<br/><br/>
+        TB1: Elaboró el análisis competitivo y comparó referentes del sector.<br/>
+        TB2: Desarrolló y refinó los diagramas C4 para representar el contexto, contenedores y componentes de la arquitectura propuesta.<br/><br/>
         Quique Vladimir Jara Benites<br/>
-        TB1: Organizó la carátula, el registro de versiones y la estructura del informe.<br/><br/>
+        TB1: Organizó la carátula, el registro de versiones y la estructura del informe.<br/>
+        TB2: Estructuró y consolidó el contenido del Capítulo IV, articulando principios de diseño, estilos arquitectónicos y decisiones técnicas.<br/><br/>
         Cesar Augusto Navarro Correa<br/>
-        TB1: Redactó épicas y tácticas del proyecto a partir de la investigación realizada.<br/><br/>
+        TB1: Redactó épicas y tácticas del proyecto a partir de la investigación realizada.<br/>
+        TB2: Modeló los diagramas de clases por dominio y definió entidades, agregados y relaciones alineadas a los bounded contexts del sistema.<br/><br/>
         Rafael Augusto Tasayco Almonacid<br/>
-        TB1: Registró entrevistas y consolidó hallazgos del segmento de albergues.<br/><br/>
+        TB1: Registró entrevistas y consolidó hallazgos del segmento de albergues.<br/>
+        TB2: Elaboró y ajustó el diagrama relacional de base de datos, vinculando la persistencia del Core DB y las bases especializadas del sistema.<br/><br/>
         Guerrero Tomas Nelson Fabrizio<br/>
-        TB1: Diseñó preguntas de entrevista y apoyó el desglose de historias de usuario.
+        TB1: Diseñó preguntas de entrevista y apoyó el desglose de historias de usuario.<br/>
+        TB2: Desarrolló los diagramas UML de actividades y estados para describir el flujo principal de donación, validación, reserva y entrega.
       </td>
-      <td style="border: 1px solid black;">Durante el TB1, cada integrante aplicó conocimientos nuevos de análisis, documentación y levantamiento de requisitos para construir aportes concretos al informe del proyecto.</td>
+      <td style="border: 1px solid black;">Durante el TB1, cada integrante aplicó conocimientos nuevos de análisis, documentación y levantamiento de requisitos para construir aportes concretos al informe del proyecto. Durante el TB2, cada integrante aplicó nuevos conocimientos de arquitectura de software, modelado y documentación técnica para sustentar el diseño arquitectónico del proyecto.</td>
     </tr>
     <tr>
       <td style="border: 1px solid black;">Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</td>
       <td style="border: 1px solid black;">
         Anderson Gonza Morales<br/>
-        TB1: Revisó referentes del mercado para mejorar el enfoque competitivo del proyecto.<br/><br/>
+        TB1: Revisó referentes del mercado para mejorar el enfoque competitivo del proyecto.<br/>
+        TB2: Incorporó nuevos criterios de modelado arquitectónico para mejorar la representación de servicios, integraciones y límites del sistema.<br/><br/>
         Quique Vladimir Jara Benites<br/>
-        TB1: Ajustó la documentación según nuevos hallazgos y aportes del equipo.<br/><br/>
+        TB1: Ajustó la documentación según nuevos hallazgos y aportes del equipo.<br/>
+        TB2: Actualizó la redacción del capítulo conforme avanzó la definición de drivers, tácticas y patrones arquitectónicos del proyecto.<br/><br/>
         Cesar Augusto Navarro Correa<br/>
-        TB1: Refinó las épicas con base en la información obtenida en la investigación.<br/><br/>
+        TB1: Refinó las épicas con base en la información obtenida en la investigación.<br/>
+        TB2: Ajustó el modelado de dominios y clases a partir del aprendizaje sobre DDD, microservicios y separación por bounded contexts.<br/><br/>
         Rafael Augusto Tasayco Almonacid<br/>
-        TB1: Incorporó aprendizajes de entrevistas para mejorar la definición del usuario receptor.<br/><br/>
+        TB1: Incorporó aprendizajes de entrevistas para mejorar la definición del usuario receptor.<br/>
+        TB2: Refinó el diseño de persistencia relacional conforme se definieron nuevas relaciones, restricciones y necesidades de trazabilidad del sistema.<br/><br/>
         Guerrero Tomas Nelson Fabrizio<br/>
-        TB1: Actualizó preguntas y stories conforme avanzó el entendimiento del problema.
+        TB1: Actualizó preguntas y stories conforme avanzó el entendimiento del problema.<br/>
+        TB2: Mejoró los diagramas dinámicos del sistema a partir del aprendizaje progresivo del flujo operativo, la validación y la logística de entrega.
       </td>
-      <td style="border: 1px solid black;">El equipo demostró aprendizaje permanente al ajustar sus aportes durante el TB1 conforme surgieron nuevos hallazgos, mejorando progresivamente la calidad del análisis y la definición del proyecto.</td>
+      <td style="border: 1px solid black;">El equipo demostró aprendizaje permanente al ajustar sus aportes durante el TB1 conforme surgieron nuevos hallazgos, mejorando progresivamente la calidad del análisis y la definición del proyecto. En el TB2, el equipo fortaleció ese aprendizaje al incorporar decisiones de diseño, modelado arquitectónico y criterios técnicos que permitieron consolidar una propuesta de arquitectura más consistente para el proyecto.</td>
     </tr>
   </tbody>
 </table>

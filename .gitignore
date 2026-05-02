@@ -1,0 +1,8 @@
+/entregables
+/content
+*.pdf
+*.docx
+*.pptx
+*.zip
+node_modules/
+.DS_Store
