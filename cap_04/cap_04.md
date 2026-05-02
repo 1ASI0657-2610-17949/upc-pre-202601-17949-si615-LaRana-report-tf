@@ -336,18 +336,64 @@ A continuación, se muestran los principales *quality attribute scenarios*, abar
 
 ## 4.3 ADD Iterations
 
-### 4.2.X Iteration N: <Iteration Name>
+### 4.3.1 Iteración 1: Estructura Base del Sistema (Greenfield)
 
-#### 4.2.X.1 Architectural Design Backlog N
+#### Paso 1: Review Inputs (Revisar Entradas)
+El diseño arquitectónico de esta primera iteración parte del siguiente estado inicial de requerimientos, atributos de calidad, restricciones y preocupaciones.
 
-#### 4.2.X.2 Establish Iteration Goal by Selecting Drivers
+| Categoría | Identificador | Descripción | Estado Actual |
+| :--- | :--- | :--- | :--- |
+| **Casos de Uso Principales** | US09<br>US13<br>US17 | Publicar un paquete alimentario.<br>Visualizar paquetes alimentarios en el mapa.<br>Reservar un paquete disponible. | No abordado |
+| **Atributos de Calidad** | AC003<br>AC004<br>AC006 | Disponibilidad (Mantener plataforma operativa).<br>Escalabilidad (Soportar picos de alto tráfico).<br>Seguridad (Acciones críticas requieren JWT). | No abordado |
+| **Restricciones** | CON001<br>CON002<br>CON006 | Enfoque basado en microservicios.<br>Desarrollo en Java con Spring Boot.<br>Uso de JWT para autenticación. | No abordado |
+| **Preocupaciones (Concerns)** | ARC-1<br>ARC-3<br>ARC-5 | Escalabilidad ante Picos de Tráfico.<br>Alta Disponibilidad y Tolerancia a Fallos.<br>Seguridad, Autenticación y Trazabilidad. | No abordado |
 
-#### 4.2.X.3 Choose One or More Elements of the System to Refine
+**[Insertar Captura de Pantalla de Trello - Estado Inicial]**
 
-#### 4.2.X.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+#### Paso 2: Establish Iteration Goal by Selecting Drivers (Establecer Objetivo)
 
-#### 4.2.X.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+**Objetivo de la Iteración:** Diseñar la arquitectura base del sistema (greenfield) adoptando un enfoque de microservicios con Spring Boot, definiendo el núcleo para la publicación y reserva de donaciones, y asegurando la autenticación centralizada mediante JWT para soportar los requisitos iniciales de disponibilidad y escalabilidad.
 
-#### 4.2.X.6 Sketch Views (C4 & UML) and Record Design Decisions
+**Drivers Seleccionados:**
+* US09, US13, US17 (Publicación y Reserva)
+* AC003, AC004, AC006 (Disponibilidad, Escalabilidad, Seguridad)
+* CON001, CON002, CON006 (Microservicios, Spring Boot, JWT)
+* ARC-1, ARC-3, ARC-5 (Escalabilidad, Disponibilidad, Seguridad)
 
-#### 4.2.X.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+#### Paso 3: Choose Elements to Refine (Elegir Elementos a Refinar)
+* Al tratarse de la primera iteración para la construcción de un sistema nuevo, el elemento a refinar es **Todo el Sistema (Greenfield)**. El enfoque estará en establecer la topología base de los microservicios, el enrutamiento de peticiones y la persistencia central.
+
+#### Paso 4: Choose Design Concepts (Elegir Conceptos de Diseño)
+
+| Concepto de Diseño | Decisión Tomada | Justificación (Rationale) | Alternativas Descartadas |
+| :--- | :--- | :--- | :--- |
+| **Estilo Arquitectónico** | Arquitectura de Microservicios | Permite el escalamiento independiente (soporta AC004 y ARC-1) y cumple la restricción CON001. | Arquitectura Monolítica (descartada por no cumplir CON001 ni soportar escalabilidad modular). |
+| **Tecnología / Framework** | Spring Boot (Java) | Cumple con la restricción de tecnología del proyecto (CON002). Ecosistema robusto para microservicios. | Node.js / Express (descartado por la restricción CON002). |
+| **Patrón de Seguridad** | API Gateway con validación JWT | Centraliza el acceso, enruta las peticiones y verifica la autenticación, cumpliendo CON006, AC006 y ARC-5. | Verificación de token individual en cada microservicio (descartado por generar duplicidad de lógica). |
+| **Patrón de Datos** | Base de Datos Relacional Compartida (Shared DB para el Core) | Garantiza la consistencia transaccional inmediata en el flujo de reservas y usuarios (mitiga parcialmente ARC-2). | Database per Service puro en esta etapa inicial (descartado por complejidad innecesaria para el núcleo fuertemente acoplado). |
+
+#### Paso 5: Instantiate Elements and Allocate Responsibilities (Instanciar y Asignar Responsabilidades)
+
+| Elemento (Componente/Módulo) | Responsabilidades | Interfaces (Conexiones) |
+| :--- | :--- | :--- |
+| **API Gateway** | Recibir peticiones de clientes, validar el token JWT y enrutar el tráfico al microservicio correspondiente. | Expone REST API (HTTPS). Conecta con Auth y Donations Service. |
+| **Auth Service** | Gestionar identidades, roles, inicio de sesión y emisión de tokens JWT. | Recibe peticiones del Gateway. Conecta con la Core DB. |
+| **Donations Service** | Ejecutar lógica de negocio para publicación (US09), visualización (US13) y reservas (US17). | Recibe peticiones del Gateway. Conecta con la Core DB. |
+| **Core DB (PostgreSQL/MySQL)** | Almacenar datos críticos relacionales (`users`, `donation_lots`, `reservations`). | Conexión JDBC desde Auth Service y Donations Service. |
+
+#### Paso 6: Sketch Views (Bocetar Vistas C4/UML)
+
+**[Insertar Imagen del Diagrama C4 Nivel 2: Contenedores]**
+> *Figura 1: Diagrama de Contenedores que refleja el estilo de microservicios con Spring Boot, la presencia del API Gateway para enrutamiento seguro y la capa de base de datos compartida para el Core transaccional.*
+
+#### Paso 7: Analysis of Current Design and Review Iteration Goal (Análisis y Revisión)
+
+| Driver Evaluado | Estado | Comentarios / Trabajo Pendiente |
+| :--- | :--- | :--- |
+| CON001, CON002 (Microservicios y Java) | **Completamente abordado** | Seleccionados como la tecnología y estilo base del sistema. |
+| AC006, CON006, ARC-5 (Seguridad JWT) | **Completamente abordado** | El API Gateway centraliza la seguridad delegando la emisión al Auth Service. |
+| US09, US13, US17 (Flujo Core) | **Parcialmente abordado** | Se definió el *Donations Service*, pero falta detallar la comunicación asíncrona de reservas (RabbitMQ) y geolocalización (Iteración 2). |
+| AC003, AC004 (Disponibilidad y Escalabilidad) | **Parcialmente abordado** | La estructura distribuida base lo permite, pero faltan tácticas de mensajería asíncrona y despliegue en la nube (Iteraciones posteriores). |
+
+**[Insertar Captura de Pantalla de Trello - Estado Final de la Iteración]**
+> *Figura 2: Tablero Kanban actualizado mostrando los drivers de restricción en la columna 'Done' y los Casos de Uso principales movidos a 'In Progress'.*
