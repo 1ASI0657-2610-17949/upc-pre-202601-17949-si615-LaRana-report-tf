@@ -60,61 +60,45 @@ En conjunto, estos enfoques permiten que **Alimenta** mantenga un nucleo funcion
 
 ### 4.1.3 Context Diagram
 
-#### Diagrama de Contexto
-
-Aqui se ubica a **Alimenta** dentro de su entorno general, identificando a los actores principales que interactuan con la plataforma y los servicios externos que la complementan. Se observan tanto los usuarios centrales del negocio como las integraciones necesarias para analisis, almacenamiento, mapas y notificaciones.
-
 <img alt="Image" src="https://github.com/user-attachments/assets/04d74eaa-0c56-430a-b6af-fd6f72f3de02" />
 
 ### 4.1.4 Approach driven ViewPoints Diagrams
 
-#### Diagrama de Contenedores
-
-En esta vista se aprecia como la solucion se organiza en aplicaciones moviles, API Gateway, microservicios, mensajeria asincrona y capas de persistencia. Tambien deja clara la separacion entre el nucleo operativo compartido y los servicios especializados que conservan mayor autonomia.
+#### Diagrama de Contexto
 
 <img alt="Image" src="https://github.com/user-attachments/assets/48b9c1d2-5d9f-49a8-9ad7-5ff609dac702" />
+
+#### Diagrama de Contenedores
+
+<img alt="Image" src="https://github.com/user-attachments/assets/2ce7194d-787a-4598-8af2-1eeba571933c" />
 
 #### Diagrama de Componentes
 
 ##### API Gateway
 
-En el API Gateway se concentra el flujo de entrada de las solicitudes, pasando por filtros de auditoria, control de trafico, autenticacion, autorizacion y enrutamiento. De esta manera, las preocupaciones transversales se resuelven antes de delegar la operacion al servicio que corresponde.
-
-<img alt="Image" src="https://github.com/user-attachments/assets/2ce7194d-787a-4598-8af2-1eeba571933c" />
+<img alt="Image" src="https://github.com/user-attachments/assets/ebff2be4-5892-4c02-b457-c6ccefafbe13" />
 
 ##### Auth Service
-
-Componentes que sostienen la autenticacion y la gestion de usuarios, roles y permisos dentro de la plataforma. La vista permite entender como se articulan los controladores, servicios de aplicacion, seguridad y repositorios con la base central del sistema.
 
 <img alt="Image" src="https://github.com/user-attachments/assets/ebff2be4-5892-4c02-b457-c6ccefafbe13" />
 
 ##### Social Impact Service
 
-Capacidades orientadas a medir el resultado social de las donaciones ya completadas. A partir de eventos del sistema, se consolidan metricas, se gestionan publicaciones vinculadas a entregas recibidas y se generan reconocimientos para los restaurantes participantes.
-
 <img alt="Image" src="https://github.com/user-attachments/assets/54c2c7fd-377e-44c0-8469-26b4b4a83177" />
 
 ##### Donations Service
-
-Nucleo transaccional del sistema, encargado de registrar donaciones, gestionar reservas y controlar los estados principales del flujo operativo. La relacion con la Core DB y la emision de eventos evidencia su rol central dentro de la plataforma.
 
 <img alt="Image" src="https://github.com/user-attachments/assets/0010526c-09f8-452a-b9cd-37a336dfa319" />
 
 ##### Food Safety Service
 
-Se realiza la validacion sanitaria de una donacion mediante checklist, evidencias y apoyo de analisis asistido por IA. Tambien se aprecia la coordinacion con almacenamiento externo y con la publicacion de resultados hacia otros servicios del sistema.
-
 <img alt="Image" src="https://github.com/user-attachments/assets/49e51378-2d24-4d33-b3b1-4ead5f0d00d5" />
 
 ##### Logistics Service
 
-Parte operativa del traslado, desde el recojo hasta la confirmacion de entrega, incluyendo tracking GPS y evidencias multimedia. Su estructura tambien deja ver las integraciones necesarias para almacenamiento, alertas y comunicacion de eventos logisticos.
-
 <img  alt="Image" src="https://github.com/user-attachments/assets/08a14c5e-13b7-4bfa-8dd1-42d9532fc3e6" />
 
 ##### Matching Service
-
-Logica encargada de priorizar receptores para cada donacion disponible. Los componentes del servicio colaboran para consultar datos del nucleo, aplicar criterios de evaluacion y registrar el resultado del proceso de matching.
 
 <img alt="Image" src="https://github.com/user-attachments/assets/c4c9109e-dc68-49e9-95f6-35d7571b78ac" />
 
@@ -299,60 +283,56 @@ click para ver completo [enlace](https://github.com/user-attachments/assets/d8f9
   La arquitectura relacional vincula las evaluaciones sanitarias, entregas e indicadores de impacto con una donacion concreta, permitiendo auditoria funcional y analisis posterior del ciclo completo.
 
 ## 4.2. Architectural Drivers
-
 ### 4.2.1. Design Purpose
-
 El propósito fundamental del diseño arquitectónico para Alimenta radica en la creación de una plataforma digital ágil, escalable y eficiente que aborde la ineficiencia logística en la redistribución de excedentes alimentarios de "último minuto". La aplicación busca simplificar y automatizar la conexión en tiempo real entre los restaurantes y los albergues u organizaciones sociales (ONGs), eliminando las barreras operativas y de tiempo tradicionales. A través de este diseño, se pretende garantizar una alta disponibilidad y rapidez en el sistema para facilitar la publicación instantánea, la geolocalización, la reserva concurrente sin conflictos y la trazabilidad segura de las donaciones, reduciendo así drásticamente el desperdicio masivo de alimentos aptos para el consumo humano.
-
 ### 4.2.2. Primary Functionality (Primary User Stories)
 
-| ID User Story | User Story                                                                                                                                                                                         |
-| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **US09**      | Como representante de un restaurante, quiero publicar un paquete alimentario con su tipo, cantidad y horario límite de recojo, para ponerlo a disposición de ONGs cercanas antes de que se pierda. |
-| **US13**      | Como representante de una ONG, quiero visualizar en un mapa los paquetes alimentarios disponibles cerca de mi ubicación, para identificar rápidamente oportunidades de recojo.                     |
-| **US15**      | Como representante de una ONG, quiero recibir una notificación automática cuando se publique un paquete cercano, para reaccionar rápidamente y aumentar las posibilidades de recojo.               |
-| **US17**      | Como representante de una ONG, quiero reservar un paquete alimentario disponible, para asegurar su asignación a mi organización antes de que otra ONG lo tome.                                     |
-| **US27**      | Como usuario participante en el intercambio, quiero confirmar digitalmente que la donación fue entregada, para cerrar el proceso de manera segura y verificable.                                   |
-| **US34**      | Como sistema, quiero cancelar automáticamente un paquete alimentario cuando se alcance su horario límite de recojo, para evitar que paquetes vencidos sigan disponibles en la plataforma.          |
-| **US35**      | Como sistema, quiero liberar un paquete reservado si no es recogido dentro del tiempo establecido, para permitir que otras ONGs puedan acceder a él antes de que expire.                           |
-
+| ID User Story | User Story |
+| :--- | :--- |
+| **US09** | Como representante de un restaurante, quiero publicar un paquete alimentario con su tipo, cantidad y horario límite de recojo, para ponerlo a disposición de ONGs cercanas antes de que se pierda. |
+| **US13** | Como representante de una ONG, quiero visualizar en un mapa los paquetes alimentarios disponibles cerca de mi ubicación, para identificar rápidamente oportunidades de recojo. |
+| **US15** | Como representante de una ONG, quiero recibir una notificación automática cuando se publique un paquete cercano, para reaccionar rápidamente y aumentar las posibilidades de recojo. |
+| **US17** | Como representante de una ONG, quiero reservar un paquete alimentario disponible, para asegurar su asignación a mi organización antes de que otra ONG lo tome. |
+| **US27** | Como usuario participante en el intercambio, quiero confirmar digitalmente que la donación fue entregada, para cerrar el proceso de manera segura y verificable. |
+| **US34** | Como sistema, quiero cancelar automáticamente un paquete alimentario cuando se alcance su horario límite de recojo, para evitar que paquetes vencidos sigan disponibles en la plataforma. |
+| **US35** | Como sistema, quiero liberar un paquete reservado si no es recogido dentro del tiempo establecido, para permitir que otras ONGs puedan acceder a él antes de que expire. |
 ### 4.2.3. Quality Attribute Scenarios
 
-A continuación, se muestran los principales _quality attribute scenarios_, abarcando aspectos críticos como rendimiento, disponibilidad, consistencia de datos y seguridad. Estos atributos garantizan que la aplicación Alimenta no solo funcione correctamente, sino que proporcione la inmediatez logística, la tolerancia a fallos y la confiabilidad requerida para operar eficientemente durante los cierres de turno y coordinar rescates de último minuto.
+A continuación, se muestran los principales *quality attribute scenarios*, abarcando aspectos críticos como rendimiento, disponibilidad, consistencia de datos y seguridad. Estos atributos garantizan que la aplicación Alimenta no solo funcione correctamente, sino que proporcione la inmediatez logística, la tolerancia a fallos y la confiabilidad requerida para operar eficientemente durante los cierres de turno y coordinar rescates de último minuto.
 
-| ID        | Atributo de Calidad               | Escenarios                                                                                                                                                                                    | Historia de Usuario Asociada | Métrica                                                                                                                |
-| :-------- | :-------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| **AC001** | Rendimiento (Performance)         | El sistema debe procesar la publicación de donaciones y el envío de alertas de manera casi instantánea para no interrumpir el flujo del personal de cocina.                                   | US09, US15                   | Tiempo de registro de paquete ≤ 2 segundos; Tiempo de envío de notificación push ≤ 5 segundos.                         |
-| **AC002** | Consistencia de Datos (Integrity) | El sistema debe prevenir conflictos de concurrencia, asegurando que un paquete disponible no pueda ser reservado por más de una ONG al mismo tiempo.                                          | US17                         | 0% de ocurrencia de reservas duplicadas o conflictos de asignación.                                                    |
-| **AC003** | Disponibilidad (Availability)     | La plataforma debe estar operativa y accesible constantemente para garantizar que ninguna donación se pierda por caídas del sistema en horarios nocturnos.                                    | US13, US17, US34             | Porcentaje de _uptime_ (tiempo de actividad) mínimo del 99.5% mensual.                                                 |
-| **AC004** | Escalabilidad (Scalability)       | El sistema debe soportar picos de alto tráfico (ej. horario de cierre simultáneo de restaurantes) sin que el rendimiento y los tiempos de carga se degraden.                                  | US09, US13                   | Capacidad de soportar 1,000 usuarios concurrentes sin que el tiempo de respuesta supere los 3 segundos.                |
-| **AC005** | Tolerancia a Fallos (Reliability) | El sistema debe permitir que procesos automáticos (como la reasignación de paquetes) operen correctamente, evitando inconsistencias o bloqueos si ocurren fallos aislados en otros servicios. | US35                         | Tasa de transacciones de donación y reasignaciones automáticas completadas ≥ 99% durante ventanas de fallos parciales. |
-| **AC006** | Seguridad (Security)              | El sistema debe asegurar que las confirmaciones y validaciones de los intercambios (como el escaneo del código QR) se realicen de forma segura e inmutable.                                   | US27                         | 100% de las acciones críticas de entrega requieren validación digital legítima y un token de sesión válido.            |
+| ID | Atributo de Calidad | Escenarios | Historia de Usuario Asociada | Métrica |
+| :--- | :--- | :--- | :--- | :--- |
+| **AC001** | Rendimiento (Performance) | El sistema debe procesar la publicación de donaciones y el envío de alertas de manera casi instantánea para no interrumpir el flujo del personal de cocina. | US09, US15 | Tiempo de registro de paquete ≤ 2 segundos; Tiempo de envío de notificación push ≤ 5 segundos. |
+| **AC002** | Consistencia de Datos (Integrity) | El sistema debe prevenir conflictos de concurrencia, asegurando que un paquete disponible no pueda ser reservado por más de una ONG al mismo tiempo. | US17 | 0% de ocurrencia de reservas duplicadas o conflictos de asignación. |
+| **AC003** | Disponibilidad (Availability) | La plataforma debe estar operativa y accesible constantemente para garantizar que ninguna donación se pierda por caídas del sistema en horarios nocturnos. | US13, US17, US34 | Porcentaje de *uptime* (tiempo de actividad) mínimo del 99.5% mensual. |
+| **AC004** | Escalabilidad (Scalability) | El sistema debe soportar picos de alto tráfico (ej. horario de cierre simultáneo de restaurantes) sin que el rendimiento y los tiempos de carga se degraden. | US09, US13 | Capacidad de soportar 1,000 usuarios concurrentes sin que el tiempo de respuesta supere los 3 segundos. |
+| **AC005** | Tolerancia a Fallos (Reliability) | El sistema debe permitir que procesos automáticos (como la reasignación de paquetes) operen correctamente, evitando inconsistencias o bloqueos si ocurren fallos aislados en otros servicios. | US35 | Tasa de transacciones de donación y reasignaciones automáticas completadas ≥ 99% durante ventanas de fallos parciales. |
+| **AC006** | Seguridad (Security) | El sistema debe asegurar que las confirmaciones y validaciones de los intercambios (como el escaneo del código QR) se realicen de forma segura e inmutable. | US27 | 100% de las acciones críticas de entrega requieren validación digital legítima y un token de sesión válido. |
 
 ### 4.2.4. Constraints
-
-| ID         | Constraints                                                                                                                                                                                                         |
-| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **CON001** | La arquitectura del sistema tendrá un enfoque estrictamente basado en microservicios, para permitir el escalamiento independiente de módulos como inventario, geolocalización y notificaciones.                     |
-| **CON002** | El backend de los microservicios será desarrollado utilizando el lenguaje de programación Java junto con el framework Spring Boot.                                                                                  |
-| **CON003** | Se utilizará obligatoriamente **RabbitMQ** como _broker_ de mensajería central para garantizar la comunicación asíncrona y la tolerancia a fallos entre los distintos microservicios.                               |
-| **CON004** | El almacenamiento de archivos estáticos, específicamente los mapas vectoriales (`.pmtiles`) y las evidencias fotográficas de los recojos, deberá realizarse utilizando un _bucket_ de **AWS S3**[cite: 1].          |
-| **CON005** | Se usará **GitHub** como plataforma centralizada para el control de versiones y la gestión del código fuente de todo el proyecto.                                                                                   |
-| **CON006** | El sistema debe implementar estándares de seguridad robustos, requiriendo el uso de **JWT (JSON Web Tokens)** para la autenticación de usuarios y comunicación cifrada mediante **HTTPS** en todos los _endpoints_. |
-| **CON007** | El flujo de cierre de donaciones estará restringido al uso de tecnologías de validación en sitio, requiriendo la generación y lectura de códigos **QR** para confirmar las entregas de manera inmutable.            |
-| **CON008** | La gestión del proyecto, seguimiento de tareas y diseño de interfaces se apoyará en herramientas colaborativas estándar de la industria (como Jira, Trello y Figma).                                                |
+| ID | Constraints |
+| :--- | :--- |
+| **CON001** | La arquitectura del sistema tendrá un enfoque estrictamente basado en microservicios, para permitir el escalamiento independiente de módulos como inventario, geolocalización y notificaciones. |
+| **CON002** | El backend de los microservicios será desarrollado utilizando el lenguaje de programación Java junto con el framework Spring Boot. |
+| **CON003** | Se utilizará obligatoriamente **RabbitMQ** como *broker* de mensajería central para garantizar la comunicación asíncrona y la tolerancia a fallos entre los distintos microservicios. |
+| **CON004** | El almacenamiento de archivos estáticos, específicamente los mapas vectoriales (`.pmtiles`) y las evidencias fotográficas de los recojos, deberá realizarse utilizando un *bucket* de **AWS S3**[cite: 1]. |
+| **CON005** | Se usará **GitHub** como plataforma centralizada para el control de versiones y la gestión del código fuente de todo el proyecto. |
+| **CON006** | El sistema debe implementar estándares de seguridad robustos, requiriendo el uso de **JWT (JSON Web Tokens)** para la autenticación de usuarios y comunicación cifrada mediante **HTTPS** en todos los *endpoints*. |
+| **CON007** | El flujo de cierre de donaciones estará restringido al uso de tecnologías de validación en sitio, requiriendo la generación y lectura de códigos **QR** para confirmar las entregas de manera inmutable. |
+| **CON008** | La gestión del proyecto, seguimiento de tareas y diseño de interfaces se apoyará en herramientas colaborativas estándar de la industria (como Jira, Trello y Figma). |
 
 ### 4.2.5. Architectural Concerns
 
-| ID    | Preocupación Arquitectónica               | Concern                                                                                                                                                                                                                          |
-| :---- | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ARC-1 | Escalabilidad ante Picos de Tráfico       | La arquitectura debe ser capaz de escalar dinámicamente para soportar la alta concurrencia generada en los horarios pico (cierres de turno de almuerzo y cena), cuando múltiples restaurantes publican paquetes simultáneamente. |
-| ARC-2 | Consistencia de Datos Transaccional       | Es crítico manejar adecuadamente la concurrencia para asegurar que un mismo paquete alimentario no pueda ser reservado por más de una ONG al mismo tiempo, evitando conflictos logísticos.                                       |
-| ARC-3 | Alta Disponibilidad y Tolerancia a Fallos | El sistema debe mantener su operatividad central (publicar y reservar) incluso si servicios secundarios, como el envío de notificaciones push, experimentan caídas o intermitencias.                                             |
-| ARC-4 | Desacoplamiento y Mensajería Asíncrona    | Es fundamental diseñar una comunicación eficiente entre microservicios (Inventory, Geo, Notification, Tracking) utilizando RabbitMQ, para evitar cuellos de botella y llamadas bloqueantes en la red.                            |
-| ARC-5 | Seguridad, Autenticación y Trazabilidad   | Es vital proteger el acceso a los _endpoints_ mediante JWT y asegurar que las entregas (validadas mediante QR) queden registradas de forma segura e inmutable para los reportes de impacto de los donantes.                      |
-| ARC-6 | Mantenibilidad y Evolución                | El diseño basado en microservicios debe permitir la incorporación ágil de futuras funcionalidades (como nuevos algoritmos de ruteo o canales de alerta) con un mínimo impacto en el entorno de producción actual.                |
-| ARC-7 | Rendimiento y Baja Latencia Geográfica    | El cálculo de distancias (Geo Service) y la carga de mapas interactivos deben realizarse con la menor latencia posible para asegurar una respuesta inmediata frente a donaciones con ventanas de tiempo cortas.                  |
+| ID | Preocupación Arquitectónica | Concern |
+| :--- | :--- | :--- |
+| ARC-1 | Escalabilidad ante Picos de Tráfico | La arquitectura debe ser capaz de escalar dinámicamente para soportar la alta concurrencia generada en los horarios pico (cierres de turno de almuerzo y cena), cuando múltiples restaurantes publican paquetes simultáneamente. |
+| ARC-2 | Consistencia de Datos Transaccional | Es crítico manejar adecuadamente la concurrencia para asegurar que un mismo paquete alimentario no pueda ser reservado por más de una ONG al mismo tiempo, evitando conflictos logísticos. |
+| ARC-3 | Alta Disponibilidad y Tolerancia a Fallos | El sistema debe mantener su operatividad central (publicar y reservar) incluso si servicios secundarios, como el envío de notificaciones push, experimentan caídas o intermitencias. |
+| ARC-4 | Desacoplamiento y Mensajería Asíncrona | Es fundamental diseñar una comunicación eficiente entre microservicios (Inventory, Geo, Notification, Tracking) utilizando RabbitMQ, para evitar cuellos de botella y llamadas bloqueantes en la red. |
+| ARC-5 | Seguridad, Autenticación y Trazabilidad | Es vital proteger el acceso a los *endpoints* mediante JWT y asegurar que las entregas (validadas mediante QR) queden registradas de forma segura e inmutable para los reportes de impacto de los donantes. |
+| ARC-6 | Mantenibilidad y Evolución | El diseño basado en microservicios debe permitir la incorporación ágil de futuras funcionalidades (como nuevos algoritmos de ruteo o canales de alerta) con un mínimo impacto en el entorno de producción actual. |
+| ARC-7 | Rendimiento y Baja Latencia Geográfica | El cálculo de distancias (Geo Service) y la carga de mapas interactivos deben realizarse con la menor latencia posible para asegurar una respuesta inmediata frente a donaciones con ventanas de tiempo cortas. |
+
 
 ## 4.3 ADD Iterations
 
@@ -368,7 +348,10 @@ El diseño arquitectónico de esta primera iteración parte del siguiente estado
 | **Restricciones** | CON001<br>CON002<br>CON006 | Enfoque basado en microservicios.<br>Desarrollo en Java con Spring Boot.<br>Uso de JWT para autenticación. | No abordado |
 | **Preocupaciones (Concerns)** | ARC-1<br>ARC-3<br>ARC-5 | Escalabilidad ante Picos de Tráfico.<br>Alta Disponibilidad y Tolerancia a Fallos.<br>Seguridad, Autenticación y Trazabilidad. | No abordado |
 
-**[Insertar Captura de Pantalla de Trello - Estado Inicial]**
+**[Captura del Estado Inicial]**
+
+<img width="760" height="750" alt="Image" src="https://github.com/user-attachments/assets/c2bd636b-60ec-4d08-9d58-a603502b9444" />
+
 
 #### Paso 2: Establish Iteration Goal by Selecting Drivers (Establecer Objetivo)
 
@@ -415,5 +398,8 @@ El diseño arquitectónico de esta primera iteración parte del siguiente estado
 | US09, US13, US17 (Flujo Core) | **Parcialmente abordado** | Se definió el *Donations Service*, pero falta detallar la comunicación asíncrona de reservas (RabbitMQ) y geolocalización (Iteración 2). |
 | AC003, AC004 (Disponibilidad y Escalabilidad) | **Parcialmente abordado** | La estructura distribuida base lo permite, pero faltan tácticas de mensajería asíncrona y despliegue en la nube (Iteraciones posteriores). |
 
-**[Insertar Captura de Pantalla de Trello - Estado Final de la Iteración]**
+**[Captura del Estado Final de la Iteración]**
+
+<img width="765" height="472" alt="Image" src="https://github.com/user-attachments/assets/5f531876-7509-4400-ad78-57dec626341b" />
+
 > *Figura 2: Tablero Kanban actualizado mostrando los drivers de restricción en la columna 'Done' y los Casos de Uso principales movidos a 'In Progress'.*
