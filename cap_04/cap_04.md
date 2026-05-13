@@ -387,6 +387,9 @@ El diseño arquitectónico de esta primera iteración parte del siguiente estado
 #### Paso 6: Sketch Views (Bocetar Vistas C4/UML)
 
 **[Insertar Imagen del Diagrama C4 Nivel 2: Contenedores]**
+
+<img alt="Image" src="https://github.com/user-attachments/assets/2ce7194d-787a-4598-8af2-1eeba571933c" />
+
 > *Figura 1: Diagrama de Contenedores que refleja el estilo de microservicios con Spring Boot, la presencia del API Gateway para enrutamiento seguro y la capa de base de datos compartida para el Core transaccional.*
 
 #### Paso 7: Analysis of Current Design and Review Iteration Goal (Análisis y Revisión)
