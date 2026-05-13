@@ -425,9 +425,9 @@ Las siguientes technical stories complementan las historias funcionales del prod
   <tbody>
     <tr>
       <td>TS01</td>
-      <td>Configurar broker de mensajeria con RabbitMQ</td>
-      <td>Como equipo de desarrollo<br>Queremos configurar RabbitMQ como broker central<br>Para que los microservicios puedan comunicarse de forma asincrona mediante eventos.</td>
-      <td><strong>E01 - Broker operativo:</strong> Dado que el entorno esta desplegado, cuando un servicio publica un mensaje en un exchange, entonces RabbitMQ lo enruta correctamente a la cola correspondiente.<br><br><strong>E02 - Fallo tolerado:</strong> Dado que un consumidor no esta disponible temporalmente, cuando el broker recibe el mensaje, entonces lo retiene en la cola hasta que el consumidor se recupere.</td>
+      <td>Configurar broker de mensajeria con Kafka</td>
+      <td>Como equipo de desarrollo<br>Queremos configurar Apache Kafka como broker central<br>Para que los microservicios puedan comunicarse de forma asincrona mediante eventos.</td>
+      <td><strong>E01 - Broker operativo:</strong> Dado que el entorno esta desplegado, cuando un servicio publica un mensaje en un topic, entonces Kafka lo distribuye correctamente a los consumidores suscritos.<br><br><strong>E02 - Fallo tolerado:</strong> Dado que un consumidor no esta disponible temporalmente, cuando el broker recibe el mensaje, entonces este permanece disponible en el topic segun la politica de retencion hasta que el consumidor se recupere.</td>
       <td>EP03, EP04</td>
     </tr>
     <tr>
@@ -518,7 +518,7 @@ Las siguientes technical stories complementan las historias funcionales del prod
     <tr><td>31</td><td>US33</td><td>Filtrar historial de donaciones</td><td>Permite filtrar el historial por tipo de accion o estado.</td><td>2</td></tr>
     <tr><td>32</td><td>US11</td><td>Editar publicacion de paquete</td><td>Permite corregir la informacion de una donacion antes de que sea reservada.</td><td>2</td></tr>
     <tr><td>33</td><td>US12</td><td>Cancelar publicacion de paquete</td><td>Permite retirar un paquete disponible cuando ya no puede ser entregado.</td><td>2</td></tr>
-    <tr><td>34</td><td>TS01</td><td>Configurar broker de mensajeria con RabbitMQ</td><td>Habilita la comunicacion asincrona entre microservicios mediante colas y eventos.</td><td>5</td></tr>
+    <tr><td>34</td><td>TS01</td><td>Configurar broker de mensajeria con Kafka</td><td>Habilita la comunicacion asincrona entre microservicios mediante topicos y eventos.</td><td>5</td></tr>
     <tr><td>35</td><td>TS02</td><td>Publicar evento paquete.publicado desde Inventory Service</td><td>Emite el evento de publicacion del paquete para activar procesos desacoplados.</td><td>5</td></tr>
     <tr><td>36</td><td>TS03</td><td>Consumir eventos en Notification Service y disparar push</td><td>Procesa eventos publicados y envia notificaciones push a ONGs cercanas.</td><td>8</td></tr>
     <tr><td>37</td><td>TS04</td><td>Configurar Geo Service con tiles .pmtiles desde S3</td><td>Sirve mapas vectoriales propios desde S3 sin depender de proveedores externos.</td><td>8</td></tr>
