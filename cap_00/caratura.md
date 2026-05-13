@@ -210,15 +210,27 @@ Link del repositorio: [Enlace](https://github.com/1ASI0657-2610-17949/Documentat
                 <td>Rafael Augusto Tasayco Almonacid</td>
                 <td>Diseño del diagrama relacional de base de datos y definición de entidades, relaciones y separación entre Core DB y bases especializadas.</td>
              </tr>
-             <tr>
-                <td>2.6</td>
-                <td>01/05/2026</td>
-                <td>Guerrero Tomas Nelson Fabrizio</td>
-                <td>Desarrollo de los diagramas UML de actividades y estados, además de la integración de tácticas, patrones y drivers arquitectónicos en el Capítulo IV.</td>
-             </tr>
-             </tbody>
-      </table>
-</span>
+              <tr>
+                 <td>2.6</td>
+                 <td>01/05/2026</td>
+                 <td>Guerrero Tomas Nelson Fabrizio</td>
+                 <td>Desarrollo de los diagramas UML de actividades y estados, además de la integración de tácticas, patrones y drivers arquitectónicos en el Capítulo IV.</td>
+              </tr>
+              <tr>
+                 <td>2.7</td>
+                 <td>12/05/2026</td>
+                 <td>Quique Vladimir Jara Benites</td>
+                 <td>TP1 - Capítulo V: redacción de 5.1.1 y 5.1.2, con evidencia de pruebas y patrones Service Layer/Repository.</td>
+              </tr>
+              <tr>
+                 <td>2.8</td>
+                 <td>12/05/2026</td>
+                 <td>Guerrero Tomas Nelson Fabrizio</td>
+                 <td>TP1 - Capítulo V: redacción de 5.1.3 y 5.1.4, con evidencia de anotaciones REST, Swagger y refactorización guiada por patrones.</td>
+              </tr>
+              </tbody>
+       </table>
+ </span>
 </div>
 
 <br><br>
@@ -375,6 +387,7 @@ permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcom
         Quique Vladimir Jara Benites<br/>
         TB1: Organizó la carátula, el registro de versiones y la estructura del informe.<br/>
         TB2: Estructuró y consolidó el contenido del Capítulo IV, articulando principios de diseño, estilos arquitectónicos y decisiones técnicas.<br/><br/>
+        TP1: Redactó las secciones 5.1.1 y 5.1.2, incorporando evidencia de pruebas y aplicación de patrones Service Layer y Repository.<br/><br/>
         Cesar Augusto Navarro Correa<br/>
         TB1: Redactó épicas y tácticas del proyecto a partir de la investigación realizada.<br/>
         TB2: Modeló los diagramas de clases por dominio y definió entidades, agregados y relaciones alineadas a los bounded contexts del sistema.<br/><br/>
@@ -383,9 +396,10 @@ permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcom
         TB2: Elaboró y ajustó el diagrama relacional de base de datos, vinculando la persistencia del Core DB y las bases especializadas del sistema.<br/><br/>
         Guerrero Tomas Nelson Fabrizio<br/>
         TB1: Diseñó preguntas de entrevista y apoyó el desglose de historias de usuario.<br/>
-        TB2: Desarrolló los diagramas UML de actividades y estados para describir el flujo principal de donación, validación, reserva y entrega.
+        TB2: Desarrolló los diagramas UML de actividades y estados para describir el flujo principal de donación, validación, reserva y entrega.<br/>
+        TP1: Redactó las secciones 5.1.3 y 5.1.4, incorporando evidencia de anotaciones REST, Swagger y refactorización orientada por patrones.
       </td>
-      <td style="border: 1px solid black;">Durante el TB1, cada integrante aplicó conocimientos nuevos de análisis, documentación y levantamiento de requisitos para construir aportes concretos al informe del proyecto. Durante el TB2, cada integrante aplicó nuevos conocimientos de arquitectura de software, modelado y documentación técnica para sustentar el diseño arquitectónico del proyecto.</td>
+      <td style="border: 1px solid black;">Durante el TB1, cada integrante aplicó conocimientos nuevos de análisis, documentación y levantamiento de requisitos para construir aportes concretos al informe del proyecto. Durante el TB2, cada integrante aplicó nuevos conocimientos de arquitectura de software, modelado y documentación técnica para sustentar el diseño arquitectónico del proyecto. En el TP1, Quique y Nelson consolidaron estos aprendizajes en el Capítulo V mediante evidencias de testing, patrones y documentación técnica del backend.</td>
     </tr>
     <tr>
       <td style="border: 1px solid black;">Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</td>
@@ -396,6 +410,7 @@ permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcom
         Quique Vladimir Jara Benites<br/>
         TB1: Ajustó la documentación según nuevos hallazgos y aportes del equipo.<br/>
         TB2: Actualizó la redacción del capítulo conforme avanzó la definición de drivers, tácticas y patrones arquitectónicos del proyecto.<br/><br/>
+        TP1: Refinó la documentación de pruebas y patrones del Capítulo V a partir de los avances reales del Auth Service.<br/><br/>
         Cesar Augusto Navarro Correa<br/>
         TB1: Refinó las épicas con base en la información obtenida en la investigación.<br/>
         TB2: Ajustó el modelado de dominios y clases a partir del aprendizaje sobre DDD, microservicios y separación por bounded contexts.<br/><br/>
@@ -404,9 +419,10 @@ permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcom
         TB2: Refinó el diseño de persistencia relacional conforme se definieron nuevas relaciones, restricciones y necesidades de trazabilidad del sistema.<br/><br/>
         Guerrero Tomas Nelson Fabrizio<br/>
         TB1: Actualizó preguntas y stories conforme avanzó el entendimiento del problema.<br/>
-        TB2: Mejoró los diagramas dinámicos del sistema a partir del aprendizaje progresivo del flujo operativo, la validación y la logística de entrega.
+        TB2: Mejoró los diagramas dinámicos del sistema a partir del aprendizaje progresivo del flujo operativo, la validación y la logística de entrega.<br/>
+        TP1: Ajustó la redacción de refactorización y bibliotecas del Capítulo V según las evidencias implementadas en el backend.
       </td>
-      <td style="border: 1px solid black;">El equipo demostró aprendizaje permanente al ajustar sus aportes durante el TB1 conforme surgieron nuevos hallazgos, mejorando progresivamente la calidad del análisis y la definición del proyecto. En el TB2, el equipo fortaleció ese aprendizaje al incorporar decisiones de diseño, modelado arquitectónico y criterios técnicos que permitieron consolidar una propuesta de arquitectura más consistente para el proyecto.</td>
+      <td style="border: 1px solid black;">El equipo demostró aprendizaje permanente al ajustar sus aportes durante el TB1 conforme surgieron nuevos hallazgos, mejorando progresivamente la calidad del análisis y la definición del proyecto. En el TB2, el equipo fortaleció ese aprendizaje al incorporar decisiones de diseño, modelado arquitectónico y criterios técnicos que permitieron consolidar una propuesta de arquitectura más consistente para el proyecto. En el TP1, Quique y Nelson evidenciaron continuidad de aprendizaje al adaptar y cerrar el Capítulo V con avances verificables de implementación y documentación.</td>
     </tr>
   </tbody>
 </table>
