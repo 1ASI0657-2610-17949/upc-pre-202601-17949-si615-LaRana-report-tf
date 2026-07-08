@@ -491,3 +491,138 @@ Los archivos `.feature` se orientan principalmente a los flujos de autenticacion
 - `reservations.feature` -> US17
 - `matching.feature` -> US17 (priorizacion inicial)
 
+### 5.3.3 Sprint 3
+
+#### 5.3.3.1 Sprint Backlog 3
+
+El objetivo principal de este Sprint es **diseñar e implementar el microservicio de Logística (Logistics Service)** utilizando arquitectura **Domain-Driven Design (DDD)**. Este servicio gestionará el ciclo de vida de las entregas usando **Redis GEO** para cálculos de distancia en tiempo real, **WebSockets** para alertas de proximidad (<50m), y una base de datos relacional (H2/PostgreSQL) para la persistencia del estado final y validación mediante QR.
+
+<div style="font-size:65%;">
+<table>
+  <tr>
+    <td>Sprint #</td>
+    <td colspan="7">Sprint 3</td>
+  </tr>
+  <tr>
+    <td colspan="2">User Story</td>
+    <td colspan="2">Work-Item / Task</td>
+    <td>Description</td>
+    <td>Estimation (Hours)</td>
+    <td>Assigned To</td>
+    <td>Status (To-do / In-Process / To-Review / Done)</td>
+  </tr>
+  <tr>
+    <td>Id</td>
+    <td>Title</td>
+    <td>Id</td>
+    <td>Title</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>US26</td>
+    <td>Generar codigo o validacion de entrega</td>
+    <td>T1</td>
+    <td>Implementar Bounded Context Delivery</td>
+    <td>Crear endpoint `POST /api/v1/deliveries` para inicializar el viaje y generar token (QR) unico.</td>
+    <td>6</td>
+    <td>Backend Dev</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US23</td>
+    <td>Actualizar estado del recojo (Tiempo real)</td>
+    <td>T2</td>
+    <td>Configurar Redis GEO y WebSockets</td>
+    <td>Implementar servidor WS y base espacial Redis para notificar proximidad y estado en tiempo real.</td>
+    <td>8</td>
+    <td>Backend Dev</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US27</td>
+    <td>Confirmar entrega de donacion</td>
+    <td>T3</td>
+    <td>Implementar endpoint de confirmacion</td>
+    <td>Validar el `verification_token` (QR) y registrar la recepcion fisica en el restaurante.</td>
+    <td>5</td>
+    <td>Backend Dev</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US28</td>
+    <td>Registrar trazabilidad del intercambio</td>
+    <td>T4</td>
+    <td>Implementar archivado de entrega</td>
+    <td>Crear endpoint `/archive` para guardar la ruta final en la base relacional y limpiar cache temporal.</td>
+    <td>4</td>
+    <td>Backend Dev</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US29</td>
+    <td>Evitar duplicidad de validacion</td>
+    <td>T5</td>
+    <td>Aplicar consistencia de estados</td>
+    <td>Asegurar transaccionalidad en DB H2 para evitar dobles confirmaciones de una misma entrega.</td>
+    <td>4</td>
+    <td>Backend Dev</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US34</td>
+    <td>Expiracion automatica de paquete</td>
+    <td>T6</td>
+    <td>Configurar Worker de Inactividad</td>
+    <td>Implementar `@Scheduled` task para liberar entregas si no hay actualizacion GPS en 20 minutos.</td>
+    <td>5</td>
+    <td>Backend Dev</td>
+    <td>Done</td>
+  </tr>
+</table>
+</div>
+#### 5.3.3.2 Development Evidence for Sprint Review
+
+## Development Evidence - Sprint 3
+
+A continuación, se presentan fragmentos clave del código desarrollado durante este Sprint.
+
+<img width="373" height="896" alt="Image" src="https://github.com/user-attachments/assets/ce676c13-b392-4ef6-ad48-ffd5b3f5b4fa" />  
+*Figura X: Estructura de paquetes dividida en Delivery Context y Verification Context.*
+
+<img width="1045" height="1025" alt="Image" src="https://github.com/user-attachments/assets/9ca3d1b1-aa0f-44dd-b6bc-e4c216b35bf7" />  
+*Figura Y: Implementación del cálculo de distancia espacial usando Redis GEO.*
+
+<img width="983" height="1052" alt="Image" src="https://github.com/user-attachments/assets/ed9b4c2d-dcc7-4de3-9377-87ac7a2a942d" />
+*Figura Z: Manejo bidireccional de WebSockets para rastreo en tiempo real.*
+
+
+<div style="font-size:65%;">
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| 1ASI0657-2610-17949/Logistic_service | main | d52d3a4954725b69324495b2928863f8d46b7721 | First commit: Logistics Service with DDD and Redis GEO | Implementación inicial del microservicio de logística. | 07/07/26 |
+| 1ASI0657-2610-17949/Logistic_service | main | 17456384d5d78cf06c4448654985a40cdeb4e540 | Add Dockerfile and configure Kafka topics; update application properties for PostgreSQL| Implementación del dockerfile. | 07/07/26 |
+| 1ASI0657-2610-17949/Logistic_service | main | 4db52f656e3212abf513b512ceee4f335f9247b1 | Implement LogisticEventPublisher for delivery cancellation and completion notifications| Implementación del LogisticEventPublisher. | 07/07/26 |
+</div>
+
+#### 5.3.3.3 Testing Suite Evidence for Sprint Review
+
+Para validar la arquitectura asíncrona y basada en eventos de ubicación, la estrategia de pruebas del Sprint 3 se centró en simulaciones directas sobre los canales de comunicación:
+
+- **HTTP REST Testing** mediante herramientas de API (Postman) para inicializar viajes y validar tokens QR.
+- **WebSocket Testing** mediante clientes bidireccionales, simulando ráfagas continuas de coordenadas JSON.
+- **Integración de Caché Espacial** validando empíricamente que Redis GEOADD y GEODIST devuelvan los valores correctos en metros.
+
+## Testing Evidence - Sprint 3
+<img width="882" height="893" alt="Image" src="https://github.com/user-attachments/assets/6d7c334a-1911-4f78-9d38-c30d59767089" />
+
+
+**Relación de Endpoints probados:**
+
+- `POST /api/v1/deliveries` -> Inicializar y generar Token
+- `WS /ws/delivery/track` -> Canal bidireccional GPS
+- `POST /api/v1/deliveries/{id}/confirm` -> Simulación QR
+- `POST /api/v1/deliveries/{id}/archive` -> Cierre y limpieza Redis
